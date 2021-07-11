@@ -11,5 +11,5 @@ A proof of concept application for registration and management of applicants. Th
 
 ### Sources
 
-<https://medium.com/@siobhanpmahoney/deploying-a-react-frontend-rails-backend-project-to-heroku-4b2c4f6f630c>
-<https://aws.amazon.com/getting-started/hands-on/build-react-app-amplify-graphql/>
+- <https://medium.com/@siobhanpmahoney/deploying-a-react-frontend-rails-backend-project-to-heroku-4b2c4f6f630c>
+- <https://aws.amazon.com/getting-started/hands-on/build-react-app-amplify-graphql/>

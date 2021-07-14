@@ -6,8 +6,10 @@ function App() {
     <div className="app">
       <header className="app-header">
         <img src={logo} className="app-logo" alt="logo" />
-        <h1 className="title">Breeze Lakes Point</h1>
-        <h3 className="title">serious fun!</h3>
+        <div>
+          <span className="title brand-name">Breeze Lakes Point</span><br/>
+          <span className="title">serious fun!</span>
+        </div>
       </header>
     </div>
   );

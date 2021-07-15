@@ -1,4 +1,3 @@
-// import logo from './logo.png';
 import Main from './components/Main'
 import './App.css';
 

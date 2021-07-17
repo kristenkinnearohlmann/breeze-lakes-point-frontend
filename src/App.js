@@ -1,9 +1,11 @@
-import Main from './components/Main'
+import Site from './components/Site'
 import './App.css';
 
 function App() {
   return (
-    <Main />
+    <>
+      <Site />
+    </>
   );
 }
 

@@ -1,23 +1,13 @@
-import React, { useEffect, useState } from 'react'
-import Splash from './Splash'
+import React from 'react'
+import Header from './Header'
 import MainContent from './MainContent'
 
 const Main = () => {
 
-    const [loading, setLoading] = useState(true)
-
-    useEffect(() => {
-      const timer = setTimeout(() => {
-        setLoading(false)
-      }, 20000)
-      return () => clearTimeout(timer)
-    }, [])
-
-
-
     return (
         <div>
-          {loading === true ? <Splash /> : <MainContent />}         
+          <Header />
+          <MainContent />       
         </div>
     )
 }

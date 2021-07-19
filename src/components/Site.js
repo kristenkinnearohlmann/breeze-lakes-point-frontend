@@ -13,11 +13,9 @@ const Site = () => {
       return () => clearTimeout(timer)
     }, [])
 
-
-
     return (
         <div>
-          {loading === true ? <Splash /> : <Main />}         
+          {(loading === true && window.location.pathname === '/') ? <Splash /> : <Main />}         
         </div>
     )
 }

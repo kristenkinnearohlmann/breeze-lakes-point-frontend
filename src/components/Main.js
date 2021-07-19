@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import MainContent from './MainContent'
-import { BrowserRouter as Router, Route, Swith } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 const Main = () => {
 
@@ -9,7 +9,10 @@ const Main = () => {
       <Router>
         <div>
           <Header />
-          <MainContent />       
+          <Switch>
+            <Route exact path="/" component={MainContent} />
+            {/* <MainContent /> */}
+          </Switch>    
         </div>
       </Router>
     )

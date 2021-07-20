@@ -12,7 +12,7 @@ const Main = () => {
           <Header />
           <Switch>
             <Route exact path="/register" component={Registration} />
-            <Route exact path="/" component={MainContent} />
+            <Route exact path="/home" component={MainContent} />
           </Switch>    
         </div>
       </Router>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { BrowserRouter as Router, Redirect } from 'react-router-dom'
+import { Redirect } from 'react-router-dom'
 import Splash from './Splash'
 import Main from './Main'
 
@@ -18,7 +18,7 @@ const Site = () => {
       <Router>
         <div>
           {/* {(loading === true && window.location.pathname === '/') ? <Splash /> : <Main />}       */}
-          {loading === true ? <Splash /> : <Redirect to={"/home"} />}
+          {loading === true ? <Splash /> : <Redirect to={'/home'} />}
         </div>
       </Router>
     )

@@ -9,17 +9,24 @@ const Site = ({ history }) => {
       const timer = setTimeout(() => {
         setLoading(false)
       }, 10000)
-      return () => clearTimeout(timer)
+
+      return () => {
+        clearTimeout(timer)
+      }
     }, [])
 
-    const loadSplashOrMain = history => {
+    const displayContent = () => {
+      if (loading === true) {
+        return <Splash />
+      } else {
         history.push("/home")
+      }
     }
 
     return (
       <div>
         {/* {(loading === true) ? <Splash /> : loadSplashOrMain(history)} */}
-        {(loading === true) ? <Splash /> : history.push("/home")}
+        {displayContent(loading)}
       </div>
     )
 }

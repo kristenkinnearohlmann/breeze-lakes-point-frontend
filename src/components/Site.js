@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Redirect } from 'react-router-dom'
 import Splash from './Splash'
-import Main from './Main'
 
-const Site = () => {
+const Site = ({ history }) => {
 
     const [loading, setLoading] = useState(true)
 
@@ -14,11 +13,20 @@ const Site = () => {
       return () => clearTimeout(timer)
     }, [])
 
+    const loadSplashOrMain = history => {
+      if (loading === true) {
+        return <Splash />
+      } else {
+        history.push("/home")
+      }
+    }
+
     return (
       <Router>
         <div>
           {/* {(loading === true && window.location.pathname === '/') ? <Splash /> : <Main />}       */}
-          {loading === true ? <Splash /> : <Redirect to={Main} />}
+          {/* {loading === true ? <Splash /> : <Redirect to={"/home"} />} */}
+          {loadSplashOrMain(history)}
         </div>
       </Router>
     )

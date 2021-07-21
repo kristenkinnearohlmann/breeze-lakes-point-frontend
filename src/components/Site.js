@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Redirect } from 'react-router-dom'
+import { BrowserRouter as Router, Redirect } from 'react-router-dom'
 import Splash from './Splash'
 import Main from './Main'
 

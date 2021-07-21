@@ -18,7 +18,7 @@ const Site = () => {
       <Router>
         <div>
           {/* {(loading === true && window.location.pathname === '/') ? <Splash /> : <Main />}       */}
-          {loading === true ? <Splash /> : <Redirect to={'/home'} />}
+          {loading === true ? <Splash /> : <Redirect to={Main} />}
         </div>
       </Router>
     )

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import logo from '../logo.png';
 
 const Main = () => {
@@ -8,6 +9,7 @@ const Main = () => {
           <div>
             <span className="title brand-name">Breeze Lakes Point</span><br/>
             <span className="title">serious fun!</span>
+            <Link to="/home">Home</Link>
           </div>
       </div>
     )

@@ -4,10 +4,11 @@ body {
 }
 
 .app {
+  border: 2px solid red;
   text-align: center;
 }
 
-.app-logo {
+/* .app-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -36,7 +37,7 @@ body {
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 .title {
   font-family: 'Over the Rainbow', cursive;

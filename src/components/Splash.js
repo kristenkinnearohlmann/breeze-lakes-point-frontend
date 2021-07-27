@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../logo.png';
+import logo from '../logo.png'
+import './Splash.css'
 
 const Main = () => {
     return (
-        <div className="app app-splash">
+        <div className="app-splash">
           <img src={logo} className="app-logo" alt="logo" />
           <div>
             <span className="title brand-name">Breeze Lakes Point</span><br/>

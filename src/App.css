@@ -45,3 +45,8 @@ body {
 .brand-name {
   font-size: 3rem;
 }
+
+.content-container {
+  border: 2px solid green;
+  margin-top: 1rem;
+}

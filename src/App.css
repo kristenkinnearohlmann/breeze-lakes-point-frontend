@@ -4,7 +4,6 @@ body {
 }
 
 .app {
-  border: 2px solid red;
   text-align: center;
 }
 
@@ -17,5 +16,5 @@ body {
 }
 
 .content-container {
-  border: 2px solid green;
+
 }

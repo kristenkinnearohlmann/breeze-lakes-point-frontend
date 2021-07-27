@@ -9,12 +9,10 @@ function App() {
     <Router>
       <div className="app">
         <Header />
-        <div className="content-container">
-          <Switch>
-            <Route exact path="/" component={Site} />
-            <Route exact path="/home" component={Main} />
-          </Switch>
-        </div>
+        <Switch>
+          <Route exact path="/" component={Site} />
+          <Route exact path="/home" component={Main} />
+        </Switch>
       </div>
     </Router>
   );

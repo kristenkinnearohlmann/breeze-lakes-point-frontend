@@ -6,6 +6,7 @@ const Header = () => {
         <header>
             Logo
             Links
+            Search
         </header>
     )
 }

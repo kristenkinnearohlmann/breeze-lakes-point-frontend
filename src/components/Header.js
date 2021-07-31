@@ -1,12 +1,13 @@
 import React from 'react'
-import logo from '../logo.png'
+import logoSmall from '../logo-small.png'
 import './Header.css'
 
 const Header = () => {
     return (
         <header>
             <div>
-                <img src={logo} className="app-logo-small" alt="logo" />
+                <img src={logoSmall} className="app-logo-small" alt="small logo" />
+                {/* <img src={logoSmall} className="app-logo-small" alt="logo" /> */}
             </div>
             <div>
                 Links

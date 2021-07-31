@@ -1,5 +1,5 @@
 header {
-    background-color: blueviolet;
+    border-bottom: 1px solid #fff;
     display: flex;
     flex-flow: row nowrap;
     height: 10vh;
@@ -10,5 +10,6 @@ header > div {
 }
 
 .app-logo-small {
-    width: 50%;
+    margin: 5px;
+    width: 6vh;
 }

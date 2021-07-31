@@ -1,11 +1,12 @@
 import React from 'react'
+import logo from '../logo.png'
 import './Header.css'
 
 const Header = () => {
     return (
         <header>
             <div>
-                Logo
+                <img src={logo} className="app-logo-small" alt="logo" />
             </div>
             <div>
                 Links

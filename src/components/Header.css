@@ -4,3 +4,11 @@ header {
     flex-flow: row nowrap;
     height: 10vh;
 }
+
+header > div {
+    flex: auto;
+}
+
+.app-logo-small {
+    width: 50%;
+}

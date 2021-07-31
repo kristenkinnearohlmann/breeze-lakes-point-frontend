@@ -7,7 +7,7 @@ const Header = () => {
         <header>
             <div>
                 <img src={logoSmall} className="app-logo-small" alt="small logo" />
-                {/* <img src={logoSmall} className="app-logo-small" alt="logo" /> */}
+                Breeze Lakes Point
             </div>
             <div>
                 Links

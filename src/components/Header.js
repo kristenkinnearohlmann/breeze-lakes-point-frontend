@@ -10,7 +10,7 @@ const Header = () => {
                 Breeze Lakes Point
             </div>
             <div>
-                Links
+                Nav Links
             </div>
             <div>
                 Search

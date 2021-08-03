@@ -17,9 +17,6 @@ const Header = () => {
                 Nav Links
             </div>
             <div>
-                Search
-            </div>
-            <div>
                 Login
             </div>
         </header>

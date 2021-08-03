@@ -10,11 +10,13 @@ header > div {
     flex: auto;
 }
 
+.header-logo {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: 5px;
+}
+
 .app-logo-small {
     margin-right: 3px;
     width: 6vh;
-}
-
-.header-logo {
-    
 }

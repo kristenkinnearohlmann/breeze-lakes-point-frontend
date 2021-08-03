@@ -11,8 +11,10 @@ header > div {
 }
 
 .header-logo {
+    align-items: center;
     display: flex;
     flex-flow: row nowrap;
+    font-family: 'Over the Rainbow', cursive;
     margin-left: 5px;
 }
 

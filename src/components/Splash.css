@@ -18,10 +18,6 @@
     justify-content: center;
     min-height: 80vh;
 }
-
-.app-link {
-    color: #61dafb;
-}
   
 @keyframes app-logo-spin {
     from {

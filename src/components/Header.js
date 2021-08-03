@@ -6,8 +6,12 @@ const Header = () => {
     return (
         <header>
             <div>
-                <img src={logoSmall} className="app-logo-small" alt="small logo" />
-                Breeze Lakes Point
+                <div className="header-logo">
+                    <img src={logoSmall} className="app-logo-small" alt="small logo" />
+                </div>
+                <div>
+                    Breeze Lakes Point
+                </div>
             </div>
             <div>
                 Nav Links

@@ -7,8 +7,7 @@ header {
 }
 
 header > div {
-    border: 1px solid orange;
-    /* flex: auto; */
+
 }
 
 .header-logo {

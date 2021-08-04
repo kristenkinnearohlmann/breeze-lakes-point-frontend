@@ -7,7 +7,8 @@ header {
 }
 
 header > div {
-    flex: auto;
+    border: 1px solid orange;
+    /* flex: auto; */
 }
 
 .header-logo {
@@ -16,9 +17,14 @@ header > div {
     flex-flow: row nowrap;
     font-family: 'Over the Rainbow', cursive;
     margin-left: 5px;
+    min-width: 200px;
 }
 
 .app-logo-small {
     margin-right: 3px;
     width: 6vh;
+}
+
+.login-link {
+    /* margin-left: auto; */
 }

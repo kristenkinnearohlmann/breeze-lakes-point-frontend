@@ -26,9 +26,9 @@ header > div {
 }
 
 .header-nav {
-
+    flex-grow: 3;
 }
 
 .header-login {
-    /* margin-left: auto; */
+    min-width: 125px;
 }

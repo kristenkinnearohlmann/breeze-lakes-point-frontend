@@ -1,4 +1,5 @@
 import React from 'react'
+import NavLinks from './NavLinks'
 import logoSmall from '../logo-small.png'
 import './Header.css'
 
@@ -14,7 +15,7 @@ const Header = () => {
                 </div>
             </div>
             <div>
-                Nav Links
+                <NavLinks />
             </div>
             <div>
                 Login

@@ -14,10 +14,10 @@ const Header = () => {
                     Breeze Lakes Point
                 </div>
             </div>
-            <div>
+            <div className="header-nav">
                 <NavLinks />
             </div>
-            <div className="login-link">
+            <div className="header-login">
                 Login
             </div>
         </header>

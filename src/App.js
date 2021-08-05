@@ -1,5 +1,6 @@
 import Header from './components/Header'
 import Site from './components/Site'
+import Dashboard from './components/Dashboard'
 import Main from './components/Main'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import './App.css'
@@ -12,7 +13,7 @@ function App() {
         <div className="content-container">
           <Switch>
             <Route exact path="/" component={Site} />
-            <Route exact path="/home" component={Main} />
+            <Route exact path="/home" component={Dashboard} />
           </Switch>
         </div>
       </div>

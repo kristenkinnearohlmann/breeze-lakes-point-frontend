@@ -1,9 +1,10 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const NavLinks = () => {
     return (
         <div>
-            Links go here
+            <NavLink to="/home" exact>Dashboard</NavLink>
         </div>
     )
 }

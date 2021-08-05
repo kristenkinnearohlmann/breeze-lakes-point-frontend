@@ -1,11 +1,11 @@
 import React from 'react'
 
-const MainComponent = () => {
+const Dashboard = () => {
     return (
         <div>
-            Main
+            Dashboard
         </div>
     )
 }
 
-export default MainComponent
+export default Dashboard

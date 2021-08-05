@@ -11,7 +11,7 @@ const Main = () => {
             <div>
               <span className="title brand-name">Breeze Lakes Point</span><br/>
               <span className="title">serious fun!</span><br/>
-              <Link to="/home">Home</Link>
+              <Link to="/home">Dashboard</Link>
             </div>
           </div>
       </div>

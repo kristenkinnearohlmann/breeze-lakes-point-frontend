@@ -1,7 +1,6 @@
 import Header from './components/Header'
 import Site from './components/Site'
 import Dashboard from './components/Dashboard'
-import Main from './components/Main'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import './App.css'
 

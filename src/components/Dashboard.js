@@ -1,14 +1,15 @@
 import { React, Component } from 'react'
 import { connect } from 'react-redux'
+import { NavLink } from 'react-router-dom'
 
 class Dashboard extends Component {
     render () {
-        console.log('Here?')
+        console.log('Dashboard component')
         console.log(this.props.currentUserId)
 
         const displayItems = () => {
             if (this.props.currentUserId === -1) {
-                return <p>You must log in to see your dashboard.</p>
+                return <p>You must <NavLink to="/login" exact>log in</NavLink> to see your dashboard.</p>
             } else {
                 return <p>Current user: {this.props.currentUserId}</p>
             }

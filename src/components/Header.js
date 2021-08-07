@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import NavLinks from './NavLinks'
 import logoSmall from '../logo-small.png'
 import './Header.css'
@@ -18,7 +19,7 @@ const Header = () => {
                 <NavLinks />
             </div>
             <div className="header-login">
-                Login
+                <NavLink to="/login" exact>Login</NavLink>
             </div>
         </header>
     )

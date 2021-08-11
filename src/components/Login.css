@@ -3,3 +3,9 @@
     text-align: left;
     width: 33%;
 }
+
+.form-style input {
+    background-color: blueviolet;
+    font-size: 1.25rem;
+    padding: 5px;
+}

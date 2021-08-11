@@ -9,13 +9,17 @@ class Login extends Component {
 
     render() {
         console.log(this.state.email)
-        
+
         return (
             <div>
                 <form className="form-style">
                     <p>
                         <label name="email">Email</label><br/>
                         <input type="text" />
+                    </p>
+                    <p>
+                        <label name="password">Password</label><br/>
+                        <input type="password" />
                     </p>
                 </form>
             </div>

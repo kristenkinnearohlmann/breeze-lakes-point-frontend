@@ -21,6 +21,7 @@ class Login extends Component {
                         <label name="password">Password</label><br/>
                         <input type="password" />
                     </p>
+                    <input type="submit" />
                 </form>
             </div>
         )

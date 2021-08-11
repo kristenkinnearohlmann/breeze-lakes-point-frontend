@@ -1,4 +1,5 @@
-import { React, Component } from 'react'
+import React, { Component } from 'react'
+import './Login.css'
 
 class Login extends Component {
     
@@ -8,11 +9,14 @@ class Login extends Component {
 
     render() {
         console.log(this.state.email)
+        
         return (
             <div>
-                Login form will go here
-                <form>
-                    
+                <form className="form-style">
+                    <p>
+                        <label name="email">Email</label><br/>
+                        <input type="text" />
+                    </p>
                 </form>
             </div>
         )

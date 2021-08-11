@@ -8,5 +8,7 @@
 .form-style input {
     background-color: blueviolet;
     font-size: 1.25rem;
+    margin-top: 3px;
     padding: 5px;
+    width: 350px;
 }

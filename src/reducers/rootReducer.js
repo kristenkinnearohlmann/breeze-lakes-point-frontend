@@ -1,8 +1,12 @@
-import { combineReducers } from 'redux'
-import login from './login'
+const rootReducer = (state = {current_user: {id: -1}}, action) => {
+    switch (action.type) {
+        // case 'LOGIN':
+        //     return state
 
-const rootReducer = combineReducers({
-    login: login
-})
+        default:
+            console.log(state.current_user)
+            return state
+    }
+}
 
 export default rootReducer

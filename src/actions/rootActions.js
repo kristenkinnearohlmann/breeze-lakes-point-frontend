@@ -1,5 +1,9 @@
-const login = loginParms => {
+const loginUser = loginParms => {
     return (dispatch) => {
         dispatch( {type: 'LOGIN'} )
     }
+}
+
+export {
+    loginUser
 }

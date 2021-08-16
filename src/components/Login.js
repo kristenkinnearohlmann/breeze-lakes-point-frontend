@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {connect } from 'react-redux'
 import './Login.css'
 
 class Login extends Component {
@@ -7,7 +8,7 @@ class Login extends Component {
         email: '',
         password: ''
     }
-    
+
     handleOnChange = event => {
         this.setState({
             [event.target.name]: event.target.value
@@ -20,6 +21,7 @@ class Login extends Component {
     }
 
     render() {
+        console.log('Login component')
         console.log(this.state.email)
 
         return (

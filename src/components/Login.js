@@ -11,13 +11,13 @@ class Login extends Component {
     render() {
         console.log(this.state.email)
 
-        const handleOnChange = event => {
+        handleOnChange = event => {
             this.setState({
                 [event.target.name]: event.target.value
             })
         }
 
-        const handleSubmit = event => {
+        handleSubmit = event => {
             event.preventDefault()
             console.log(this.state)
         }

@@ -18,12 +18,12 @@ class Login extends Component {
 
     handleSubmit = event => {
         event.preventDefault()
+        console.log(this.props.currentUserId)
         console.log(this.state)
     }
 
     render() {
         console.log('Login component')
-        console.log(this.state.email)
 
         return (
             <div>

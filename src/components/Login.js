@@ -50,7 +50,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        login: loginParms => dispatch(login())
+        loginUser: loginParms => dispatch(loginUser(loginParms))
     }
 }
 

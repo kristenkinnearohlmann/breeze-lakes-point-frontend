@@ -7,20 +7,20 @@ class Login extends Component {
         email: '',
         password: ''
     }
+    
+    handleOnChange = event => {
+        this.setState({
+            [event.target.name]: event.target.value
+        })
+    }
+
+    handleSubmit = event => {
+        event.preventDefault()
+        console.log(this.state)
+    }
 
     render() {
         console.log(this.state.email)
-
-        handleOnChange = event => {
-            this.setState({
-                [event.target.name]: event.target.value
-            })
-        }
-
-        handleSubmit = event => {
-            event.preventDefault()
-            console.log(this.state)
-        }
 
         return (
             <div>

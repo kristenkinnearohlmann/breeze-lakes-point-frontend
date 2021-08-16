@@ -42,4 +42,16 @@ class Login extends Component {
     }
 }
 
-export default Login
+const mapStateToProps = state => {
+    return {
+        currentUserId: state.current_user.id
+    }
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+        login: loginParms => dispatch(login())
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Login)

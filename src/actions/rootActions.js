@@ -1,4 +1,4 @@
-const login = () => {
+const login = loginParms => {
     return (dispatch) => {
         dispatch( {type: 'LOGIN'} )
     }

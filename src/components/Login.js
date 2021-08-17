@@ -20,6 +20,7 @@ class Login extends Component {
         event.preventDefault()
         console.log(this.props.currentUserId)
         console.log(this.state)
+        this.props.loginUser(this.state)
     }
 
     render() {

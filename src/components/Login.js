@@ -18,8 +18,12 @@ class Login extends Component {
 
     handleSubmit = event => {
         event.preventDefault()
+        const loginVals = {
+            ...this.state,
+            currentUserId: this.props.currentUserId
+        }
+        console.log(loginVals)
         console.log(this.props.currentUserId)
-        console.log(this.state)
         this.props.loginUser(this.state)
     }
 

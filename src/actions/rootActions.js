@@ -2,34 +2,35 @@ const loginUser = loginParms => {
     return (dispatch) => {
 
         let userId = loginParms.currentUserId
+        let userType = ''
 
         switch (loginParms.email) {
             case 'user@mail.com':
-                console.log('User')
+                userType = 'User'
                 userId = 2
                 break
             case 'desk@mail.com':
-                console.log('Desk')
+                userType = 'Desk'
                 userId = 3
                 break
             case 'editor@mail.com':
-                console.log('Editor')
+                userType = 'Editor'
                 userId = 4
                 break
             case 'manager@mail.com':
-                console.log('Manager')
+                userType = 'Manager'
                 userId = 5
                 break
             case 'admin@mail.com':
-                console.log('Admin')
+                userType = 'Admin'
                 userId = 6
                 break
             case 'vendor@mail.com':
-                console.log('Vendor')
+                userType = 'Vendor'
                 userId = 7
                 break
             case 'sysadmin@mail.com':
-                console.log('SysAdmin')
+                userType = 'SysAdmin'
                 userId = 1
                 break
             default:
@@ -39,7 +40,8 @@ const loginUser = loginParms => {
 
         loginParms = {
             ...loginParms,
-            currentUserId: userId
+            currentUserId: userId,
+            userType: userType
         }
         dispatch( {type: 'LOGIN', payload: loginParms} )
     }

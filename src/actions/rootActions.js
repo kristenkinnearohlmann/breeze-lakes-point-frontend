@@ -1,7 +1,7 @@
 const loginUser = loginParms => {
     return (dispatch) => {
 
-        let userId
+        let userId = loginParms.currentUserId
 
         switch (loginParms.email) {
             case 'user@mail.com':

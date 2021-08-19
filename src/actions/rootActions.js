@@ -1,7 +1,7 @@
 const loginUser = loginParms => {
     return (dispatch) => {
 
-        switch (loginParms.loginUser) {
+        switch (loginParms.email) {
             case 'user@mail.com':
                 console.log('User')
                 break

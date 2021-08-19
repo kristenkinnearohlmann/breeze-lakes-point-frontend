@@ -20,6 +20,11 @@ const loginUser = loginParms => {
             case 'vendor@mail.com':
                 console.log('Vendor')
                 break
+            case 'sysadmin@mail.com':
+                loginParms = {
+                    ...loginParms,
+                    currentUserId: 1
+                }
             default:
                 console.log(loginParms.email)
                 break

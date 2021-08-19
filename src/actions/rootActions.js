@@ -1,7 +1,6 @@
 const loginUser = loginParms => {
     return (dispatch) => {
-        console.log(loginParms)
-        dispatch( {type: 'LOGIN'} )
+        dispatch( {type: 'LOGIN', payload: loginParms} )
     }
 }
 

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import {connect } from 'react-redux'
+import { connect } from 'react-redux'
+import 'react-router-dom'
 import { loginUser } from '../actions/rootActions'
 import './Login.css'
 
@@ -25,8 +26,10 @@ class Login extends Component {
         }
 
         this.props.loginUser(loginVals)
+        console.log(this.props.currentUserId)
         console.log('End of Login component')
         // redirect to home
+        this.props.history.push('/home')
     }
 
     render() {

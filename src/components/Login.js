@@ -25,6 +25,8 @@ class Login extends Component {
         }
 
         this.props.loginUser(loginVals)
+        console.log('End of Login component')
+        // redirect to home
     }
 
     render() {

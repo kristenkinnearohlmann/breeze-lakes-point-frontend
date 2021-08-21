@@ -6,16 +6,20 @@ const rootReducer = (state = {current_user: {id: -1}}, action) => {
             console.log(
                 {
                     ...state,
-                    current_user: {id: action.payload.currentUserId},
-                    email: action.payload.email,
-                    user_type: action.payload.userType
+                    current_user: {
+                        id: action.payload.currentUserId,
+                        email: action.payload.email,
+                        user_type: action.payload.userType
+                    }
                 }
             )
             return {
                 ...state,
-                current_user: {id: action.payload.currentUserId},
-                email: action.payload.email,
-                user_type: action.payload.userType
+                current_user: {
+                    id: action.payload.currentUserId,
+                    email: action.payload.email,
+                    user_type: action.payload.userType
+                }
             }
 
         default:

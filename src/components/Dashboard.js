@@ -11,7 +11,7 @@ class Dashboard extends Component {
             if (this.props.currentUserId === -1) {
                 return <p>You must <NavLink to="/login" exact>log in</NavLink> to see your dashboard.</p>
             } else {
-                return <p>Current user: {this.props.currentUserId}</p>
+                return <p>Current user: {this.props.currentUserEmail}<br/>User type: {this.props.currentUserType}</p>
             }
         }
 
@@ -33,7 +33,9 @@ class Dashboard extends Component {
 
 const mapStateToProps = state => {
     return {
-        currentUserId: state.current_user.id
+        currentUserId: state.current_user.id,
+        currentUserEmail: state.current_user.email,
+        currentUserType: state.current_user.user_type
     }
 }
 

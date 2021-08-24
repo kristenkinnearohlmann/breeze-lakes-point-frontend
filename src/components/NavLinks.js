@@ -5,8 +5,8 @@ import './NavLinks.css'
 const NavLinks = () => {
     return (
         <div className="link-layout">
-            <NavLink to="/home" exact>Dashboard</NavLink>
-            <NavLink to="/registration" exact>Registration</NavLink>
+            <div><NavLink to="/home" exact>Dashboard</NavLink></div>
+            <div><NavLink to="/registration" exact>Registration</NavLink></div>
         </div>
     )
 }

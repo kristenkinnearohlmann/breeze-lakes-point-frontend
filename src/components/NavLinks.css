@@ -4,5 +4,6 @@
 }
 
 .link-layout > div {
-    
+    align-content: space-around;
+    border: 2px solid yellow;
 }

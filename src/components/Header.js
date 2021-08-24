@@ -1,10 +1,10 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { NavLink } from 'react-router-dom'
+import { logoutUser } from '../actions/rootActions'
 import NavLinks from './NavLinks'
 import logoSmall from '../logo-small.png'
 import './Header.css'
-import { logoutUser } from '../actions/rootActions'
 
 const Header = props => {
     console.log('Header component')
@@ -23,6 +23,7 @@ const Header = props => {
                 <NavLinks />
             </div>
             <div className="header-login">
+                {/* TODO: Invoke logoutUser function for Logout link */}
                 {props.currentUserId === -1 ? <NavLink to="/login" exact>Login</NavLink> : "Logout"}
             </div>
         </header>

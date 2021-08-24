@@ -1,0 +1,8 @@
+.link-layout {
+    background-color: blueviolet;
+    display: flex;
+}
+
+.link-layout > div {
+    
+}

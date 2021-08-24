@@ -1,9 +1,5 @@
 .link-layout {
-    background-color: blueviolet;
     display: flex;
-}
-
-.link-layout > div {
-    align-content: space-around;
-    border: 2px solid yellow;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
 }

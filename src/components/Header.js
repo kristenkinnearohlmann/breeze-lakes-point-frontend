@@ -22,7 +22,8 @@ const Header = props => {
                 <NavLinks />
             </div>
             <div className="header-login">
-                <NavLink to="/login" exact>Login</NavLink>
+                {props.currentUserId === -1 ? <NavLink to="/login" exact>Login</NavLink> : "Logout"}
+                {/* <NavLink to="/login" exact>Login</NavLink> */}
             </div>
         </header>
     )

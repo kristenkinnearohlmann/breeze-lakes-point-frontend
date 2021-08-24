@@ -1,10 +1,13 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import { NavLink } from 'react-router-dom'
 import NavLinks from './NavLinks'
 import logoSmall from '../logo-small.png'
 import './Header.css'
 
-const Header = () => {
+const Header = props => {
+    console.log('Header component')
+    console.log(props.currentUserId)
     return (
         <header>
             <div className="header-logo title">
@@ -25,4 +28,10 @@ const Header = () => {
     )
 }
 
-export default Header
+const mapStateToProps = state => {
+    return {
+        currentUserId: state.current_user.id
+    }
+}
+
+export default connect(mapStateToProps)(Header)

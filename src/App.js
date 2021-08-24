@@ -2,6 +2,7 @@ import Header from './components/Header'
 import Site from './components/Site'
 import Dashboard from './components/Dashboard'
 import Login from './components/Login'
+import Registration from './components/Registration'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import './App.css'
 

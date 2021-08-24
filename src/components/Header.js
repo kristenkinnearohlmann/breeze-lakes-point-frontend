@@ -23,8 +23,6 @@ const Header = props => {
                 <NavLinks />
             </div>
             <div className="header-login">
-                {/* TODO: Invoke logoutUser function for Logout link */}
-                {/* {props.currentUserId === -1 ? <NavLink to="/login" exact>Login</NavLink> : "Logout"} */}
                 {props.currentUserId === -1 ? <NavLink to="/login" exact>Login</NavLink> : <NavLink to="/home" onClick={() => props.logoutUser()}exact>Logout</NavLink>}
             </div>
         </header>

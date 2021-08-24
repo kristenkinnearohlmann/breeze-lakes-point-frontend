@@ -30,3 +30,7 @@ header > div {
 .header-login {
     min-width: 125px;
 }
+
+.remove-underline {
+    text-decoration: none;
+}

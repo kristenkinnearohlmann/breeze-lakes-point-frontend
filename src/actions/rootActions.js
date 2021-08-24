@@ -47,6 +47,12 @@ const loginUser = loginParms => {
     }
 }
 
+const logoutUser = () => {
+    return (dispatch) => {
+        dispatch( {type: 'LOGOUT'} )
+    }
+}
+
 export {
     loginUser
 }

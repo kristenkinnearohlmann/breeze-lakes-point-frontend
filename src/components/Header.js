@@ -9,10 +9,10 @@ const Header = () => {
         <header>
             <div className="header-logo title">
                 <div>
-                    <img src={logoSmall} className="app-logo-small" alt="small logo" />
+                    <NavLink to="/" exact><img src={logoSmall} className="app-logo-small" alt="small logo" /></NavLink>
                 </div>
                 <div>
-                    Breeze Lakes Point
+                    <NavLink to="/" exact>Breeze Lakes Point</NavLink>
                 </div>
             </div>
             <div className="header-nav">

@@ -54,5 +54,6 @@ const logoutUser = () => {
 }
 
 export {
-    loginUser
+    loginUser,
+    logoutUser
 }

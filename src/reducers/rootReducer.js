@@ -11,6 +11,12 @@ const rootReducer = (state = {current_user: {id: -1}}, action) => {
                 }
             }
 
+        case 'LOGOUT':
+            console.log('Logout reducer')
+            return {
+                current_user: {id: -1}
+            }
+
         default:
             console.log(state.current_user)
             return state

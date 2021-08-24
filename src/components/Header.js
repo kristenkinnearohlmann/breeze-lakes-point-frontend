@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom'
 import NavLinks from './NavLinks'
 import logoSmall from '../logo-small.png'
 import './Header.css'
+import { logoutUser } from '../actions/rootActions'
 
 const Header = props => {
     console.log('Header component')
@@ -34,4 +35,10 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps)(Header)
+const mapDispatchToProps = dispatch => {
+    return {
+        logoutUser: () => dispatch(logoutUser())
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header)

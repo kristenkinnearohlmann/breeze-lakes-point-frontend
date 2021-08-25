@@ -1,22 +1,42 @@
-import React from 'react'
+import { React, Component } from 'react'
 import { connect } from 'react-redux'
 
-const Registration = props => {
-    console.log('Registration component')
-    console.log(props.currentUserId)
-    return (
-        <div>
-            Registration<br/>
-            she/her/hers<br/>
-            he/him/his<br/>
-            they/them/theirs<br/>
-            she/they/theirs<br/>
-            he/they/theirs<br/>
-            <form>
+class Registration extends Component {
 
-            </form>
-        </div>
-    )
+    state = {
+
+    }
+
+    handleonChange = event => {
+        this.setState({
+            [event.target.name]: event.target.value
+        })
+    }
+
+    handleSubmit = event => {
+        event.preventDefault()
+        console.log(this.state)
+        // TODO: Add call to dispatch action to handle input
+    }
+
+    render() {
+        console.log('Registration component')
+        console.log(this.props.currentUserId)        
+        return (
+            <div>
+                Registration<br/>
+                she/her/hers<br/>
+                he/him/his<br/>
+                they/them/theirs<br/>
+                she/they/theirs<br/>
+                he/they/theirs<br/>
+                <form>
+    
+                </form>
+            </div>
+        )
+    }
+
 }
 
 const mapStateToProps = state => {

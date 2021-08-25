@@ -6,9 +6,14 @@ const Registration = props => {
     console.log(props.currentUserId)
     return (
         <div>
-            Registration
+            Registration<br/>
+            she/her/hers<br/>
+            he/him/his<br/>
+            they/them/theirs<br/>
+            she/they/theirs<br/>
+            he/they/theirs<br/>
             <form>
-                
+
             </form>
         </div>
     )

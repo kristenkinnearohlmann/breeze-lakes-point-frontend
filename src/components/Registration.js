@@ -25,13 +25,9 @@ class Registration extends Component {
         return (
             <div>
                 <h2>Registration</h2>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
                 <form>
                     <p>
+                        {/* see notes for source */}
                         <label>Pronouns</label><br/>
                         <select name="pronoun_id" id="pronoun_id" value={this.state.pronoun_id} onChange={this.handleonChange}>
                             <option value="-1"></option>

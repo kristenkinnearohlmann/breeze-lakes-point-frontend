@@ -24,7 +24,7 @@ class Registration extends Component {
         console.log(this.props.currentUserId)        
         return (
             <div>
-                Registration<br/>
+                <h2>Registration</h2>
                 she/her/hers<br/>
                 he/him/his<br/>
                 they/them/theirs<br/>

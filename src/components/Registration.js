@@ -7,6 +7,9 @@ const Registration = props => {
     return (
         <div>
             Registration
+            <form>
+                
+            </form>
         </div>
     )
 }

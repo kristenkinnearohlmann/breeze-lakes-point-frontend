@@ -4,7 +4,8 @@ import { connect } from 'react-redux'
 class Registration extends Component {
 
     state = {
-        pronoun_id: -1
+        pronoun_id: -1,
+        first_name: ""
     }
 
     handleonChange = event => {
@@ -28,7 +29,7 @@ class Registration extends Component {
                 <form>
                     <p>
                         {/* see notes for source */}
-                        <label>Pronouns</label><br/>
+                        <label htmlFor="pronoun_id">Pronouns</label><br/>
                         <select name="pronoun_id" id="pronoun_id" value={this.state.pronoun_id} onChange={this.handleonChange}>
                             <option value="-1"></option>
                             <option value="1">she/her/hers</option>
@@ -37,6 +38,14 @@ class Registration extends Component {
                             <option value="4">she/they/theirs</option>
                             <option value="5">he/they/theirs</option>
                         </select>
+                    </p>
+                    <p>
+                        <div>
+                            <p>
+                                <label htmlFor="first_name">First Name</label><br/>
+                                <input type="text" name="first_name" id="first_name" value={this.state.first_name} onChange={this.handleonChange} />
+                            </p>
+                        </div>
                     </p>
                 </form>
             </div>

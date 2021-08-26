@@ -1,5 +1,6 @@
 import { React, Component } from 'react'
 import { connect } from 'react-redux'
+import './Registration.css'
 
 class Registration extends Component {
 
@@ -41,7 +42,7 @@ class Registration extends Component {
                             <option value="5">he/they/theirs</option>
                         </select>
                     </p>
-                    <div>
+                    <div className="input-fields-row">
                         <p>
                             <label htmlFor="first_name">First Name</label><br/>
                             <input type="text" name="first_name" id="first_name" value={this.state.first_name} onChange={this.handleonChange} />

@@ -1,0 +1,8 @@
+.input-fields-row {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.input-fields-row > p {
+    background-color: blueviolet;
+}

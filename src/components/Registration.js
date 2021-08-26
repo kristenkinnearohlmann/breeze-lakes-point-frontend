@@ -5,7 +5,9 @@ class Registration extends Component {
 
     state = {
         pronoun_id: -1,
-        first_name: ""
+        first_name: "",
+        middle_name: "",
+        no_middle_name: false
     }
 
     handleonChange = event => {
@@ -39,14 +41,17 @@ class Registration extends Component {
                             <option value="5">he/they/theirs</option>
                         </select>
                     </p>
-                    <p>
-                        <div>
-                            <p>
-                                <label htmlFor="first_name">First Name</label><br/>
-                                <input type="text" name="first_name" id="first_name" value={this.state.first_name} onChange={this.handleonChange} />
-                            </p>
-                        </div>
-                    </p>
+                    <div>
+                        <p>
+                            <label htmlFor="first_name">First Name</label><br/>
+                            <input type="text" name="first_name" id="first_name" value={this.state.first_name} onChange={this.handleonChange} />
+                        </p>
+                        <p>
+                            <label htmlFor="middle_name">Middle Name</label><br/>
+                            <input type="text" name="middle_name" id="middle_name" value={this.state.middle_name} onChange={this.handleonChange} /><br/>
+                            <input type="checkbox" name="no_middle_name" id="no_middle_name" value={this.state.no_middle_name} onChange={this.handleonChange} />
+                        </p>
+                    </div>
                 </form>
             </div>
         )

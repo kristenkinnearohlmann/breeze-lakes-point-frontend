@@ -29,7 +29,7 @@ class Registration extends Component {
         return (
             <div>
                 <h2>Registration</h2>
-                <form>
+                <form className="form-reg">
                     <p>
                         {/* see notes for source */}
                         <label htmlFor="pronoun_id">Pronouns</label><br/>

@@ -49,7 +49,7 @@ class Registration extends Component {
                         <p>
                             <label htmlFor="middle_name">Middle Name</label><br/>
                             <input type="text" name="middle_name" id="middle_name" value={this.state.middle_name} onChange={this.handleonChange} /><br/>
-                            <input type="checkbox" name="no_middle_name" id="no_middle_name" value={this.state.no_middle_name} onChange={this.handleonChange} />
+                            <input type="checkbox" name="no_middle_name" id="no_middle_name" value={this.state.no_middle_name} onChange={this.handleonChange} />No middle name
                         </p>
                     </div>
                 </form>

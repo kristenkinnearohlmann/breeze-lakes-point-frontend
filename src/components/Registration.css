@@ -7,10 +7,9 @@
 
 .input-fields-row {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
 }
 
 .input-fields-row > p {
-    background-color: blueviolet;
-    margin-left: 5px;
+    margin-left: 10px;
 }

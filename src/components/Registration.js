@@ -32,18 +32,6 @@ class Registration extends Component {
             <div>
                 <h2>Registration</h2>
                 <form className="form-reg">
-                    <p>
-                        {/* see notes for source */}
-                        <label htmlFor="pronoun_id">Pronouns</label><br/>
-                        <select name="pronoun_id" id="pronoun_id" value={this.state.pronoun_id} onChange={this.handleonChange}>
-                            <option value="-1"></option>
-                            <option value="1">she/her/hers</option>
-                            <option value="2">he/him/his</option>
-                            <option value="3">they/them/theirs</option>
-                            <option value="4">she/they/theirs</option>
-                            <option value="5">he/they/theirs</option>
-                        </select>
-                    </p>
                     <div className="input-fields-row">
                         <p>
                             <label htmlFor="first_name">First Name</label><br/>
@@ -58,10 +46,24 @@ class Registration extends Component {
                             <label htmlFor="last_name">Last Name</label><br/>
                             <input type="text" name="last_name" id="last_name" value={this.state.last_name} onChange={this.handleonChange} />
                         </p>
+                    </div>
+                    <div className="input-fields-row">
                         <p>
                             <label htmlFor="preferred_name">Preferred Name</label><br/>
                             <input type="text" name="preferred_name" id="preferred_name" value={this.state.preferred_name} onChange={this.handleonChange} />
                         </p>
+                        <p>
+                        {/* see notes for source */}
+                        <label htmlFor="pronoun_id">Pronouns</label><br/>
+                        <select name="pronoun_id" id="pronoun_id" value={this.state.pronoun_id} onChange={this.handleonChange}>
+                            <option value="-1"></option>
+                            <option value="1">she/her/hers</option>
+                            <option value="2">he/him/his</option>
+                            <option value="3">they/them/theirs</option>
+                            <option value="4">she/they/theirs</option>
+                            <option value="5">he/they/theirs</option>
+                        </select>
+                    </p>
                     </div>
                 </form>
             </div>

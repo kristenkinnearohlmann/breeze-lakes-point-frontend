@@ -30,7 +30,8 @@ class Registration extends Component {
 
     render() {
         console.log('Registration component')
-        console.log(this.props.currentUserId)        
+        console.log(this.props.currentUserId)   
+        const state_abbrev_arr = [ 'AL', 'AK', 'AS', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'DC', 'FM', 'FL', 'GA', 'GU', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MH', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'MP', 'OH', 'OK', 'OR', 'PW', 'PA', 'PR', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VI', 'VA', 'WA', 'WV', 'WI', 'WY' ]
         return (
             <div>
                 <h2>Registration</h2>
@@ -77,6 +78,7 @@ class Registration extends Component {
                         <p>
                             <label htmlFor="state_abbrev">State</label><br/>
                             <input type="text" name="state_abbrev" id="state_abbrev" value={this.state.state_abbrev} onChange={this.handleonChange} />
+                            {/* state_abbrev_arr */}
                         </p>
                     </div>
                 </form>

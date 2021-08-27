@@ -13,7 +13,8 @@ class Registration extends Component {
         preferred_name: "",
         street_address: "",
         city: "",
-        state_abbrev: ""
+        state_abbrev: "",
+        zip_code: null
     }
 
     handleonChange = event => {
@@ -79,6 +80,11 @@ class Registration extends Component {
                             <label htmlFor="state_abbrev">State</label><br/>
                             <input type="text" name="state_abbrev" id="state_abbrev" value={this.state.state_abbrev} onChange={this.handleonChange} />
                             {/* state_abbrev_arr */}
+                        </p>
+                        <p>
+                            {/* check for number */}
+                            <label htmlFor="zip_code">Zip Code</label><br/>
+                            <input type="text" name="zip_code" id="zip_code" value={this.state.zip_code} onChange={this.handleonChange} />
                         </p>
                     </div>
                 </form>

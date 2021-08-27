@@ -10,7 +10,10 @@ class Registration extends Component {
         middle_name: "",
         no_middle_name: false,
         last_name: "",
-        preferred_name: ""
+        preferred_name: "",
+        street_address: "",
+        city: "",
+        state_abbrev: ""
     }
 
     handleonChange = event => {
@@ -60,6 +63,20 @@ class Registration extends Component {
                                 <option value="3">they/them</option>
                                 <option value="4">other</option>
                             </select>
+                        </p>
+                    </div>
+                    <div className="input-fields-row">
+                        <p>
+                            <label htmlFor="street_address">Street Address</label><br/>
+                            <input type="text" name="street_address" id="street_address" value={this.state.street_address} onChange={this.handleonChange} />
+                        </p>
+                        <p>
+                            <label htmlFor="city">City</label><br/>
+                            <input type="text" name="city" id="city" value={this.state.city} onChange={this.handleonChange} />
+                        </p>
+                        <p>
+                            <label htmlFor="state_abbrev">State</label><br/>
+                            <input type="text" name="state_abbrev" id="state_abbrev" value={this.state.state_abbrev} onChange={this.handleonChange} />
                         </p>
                     </div>
                 </form>

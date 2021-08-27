@@ -55,11 +55,10 @@ class Registration extends Component {
                             <label htmlFor="pronoun_id">Pronouns</label><br/>
                             <select name="pronoun_id" id="pronoun_id" value={this.state.pronoun_id} onChange={this.handleonChange}>
                                 <option value="-1"></option>
-                                <option value="1">she/her/hers</option>
-                                <option value="2">he/him/his</option>
-                                <option value="3">they/them/theirs</option>
-                                <option value="4">she/they/theirs</option>
-                                <option value="5">he/they/theirs</option>
+                                <option value="1">she/her</option>
+                                <option value="2">he/him</option>
+                                <option value="3">they/them</option>
+                                <option value="4">other</option>
                             </select>
                         </p>
                     </div>

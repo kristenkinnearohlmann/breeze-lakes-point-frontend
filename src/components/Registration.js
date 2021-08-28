@@ -14,7 +14,7 @@ class Registration extends Component {
         street_address: "",
         city: "",
         state_abbrev: "",
-        zip_code: 0
+        zip_code: ""
     }
 
     state_abbrevs = [ 'AL', 'AK', 'AS', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'DC', 'FM', 'FL', 'GA', 'GU', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MH', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'MP', 'OH', 'OK', 'OR', 'PW', 'PA', 'PR', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VI', 'VA', 'WA', 'WV', 'WI', 'WY' ]
@@ -34,10 +34,7 @@ class Registration extends Component {
     render() {
         console.log('Registration component')
         console.log(this.props.currentUserId)   
-        const state_abbrevs_2 = [ 'AL', 'AK', 'AS', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'DC', 'FM', 'FL', 'GA', 'GU', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MH', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'MP', 'OH', 'OK', 'OR', 'PW', 'PA', 'PR', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VI', 'VA', 'WA', 'WV', 'WI', 'WY' ]
-        state_abbrevs_2.forEach(abbrev => {
-            console.log(`<option value='${abbrev}'></option>`)
-        })
+
         return (
             <div>
                 <h2>Registration</h2>
@@ -80,11 +77,6 @@ class Registration extends Component {
                         <p>
                             <label htmlFor="city">City</label><br/>
                             <input type="text" name="city" id="city" value={this.state.city} onChange={this.handleonChange} />
-                        </p>
-                        <p>
-                            <label htmlFor="state_abbrev">State</label><br/>
-                            <input type="text" name="state_abbrev" id="state_abbrev" value={this.state.state_abbrev} onChange={this.handleonChange} />
-                            {/* state_abbrevs */}
                         </p>
                         <p>
                             <label htmlFor="state_abbrev">State</label><br/>

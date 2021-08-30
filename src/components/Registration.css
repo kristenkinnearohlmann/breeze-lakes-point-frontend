@@ -13,6 +13,8 @@
 
 .input-fields-row > legend {
     font-size: 1.15rem;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .input-fields-row > p {

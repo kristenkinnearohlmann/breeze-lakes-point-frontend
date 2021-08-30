@@ -20,3 +20,7 @@
 .input-fields-row > p {
     margin-left: 10px;
 }
+
+.form-reg-select {
+    background-color: blueviolet;
+}

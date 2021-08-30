@@ -21,7 +21,14 @@
     margin-left: 10px;
 }
 
-.form-reg-select {
+.form-reg input[type="text"] {
+    background-color: blueviolet;
+    font-size: 1.15rem;
+    padding: .25rem;
+}
+
+.form-reg select {
     height: 1.5rem;
-    padding: 5px;
+    font-size: 1.15rem;
+    padding: .25rem;
 }

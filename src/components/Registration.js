@@ -62,7 +62,7 @@ class Registration extends Component {
                             <p>
                             {/* see notes for source */}
                                 <label htmlFor="pronoun_id">Pronouns</label><br/>
-                                <select className="form-reg-select" name="pronoun_id" id="pronoun_id" value={this.state.pronoun_id} onChange={this.handleonChange}>
+                                <select name="pronoun_id" id="pronoun_id" value={this.state.pronoun_id} onChange={this.handleonChange}>
                                     <option value="-1"></option>
                                     <option value="1">she/her</option>
                                     <option value="2">he/him</option>
@@ -85,7 +85,7 @@ class Registration extends Component {
                             </p>
                             <p>
                                 <label htmlFor="state_abbrev">State</label><br/>
-                                <select className="form-reg-select" name="state_abbrev" id="state_abbrev" value={this.state.state_abbrev} onChange={this.handleonChange}>
+                                <select name="state_abbrev" id="state_abbrev" value={this.state.state_abbrev} onChange={this.handleonChange}>
                                     <option value="NA"></option>
                                     {this.state_abbrevs.map(abbrev => {
                                         return (

@@ -6,6 +6,7 @@
 }
 
 .input-fields-row {
+    border: 0;
     display: flex;
     flex-flow: row wrap;
 }

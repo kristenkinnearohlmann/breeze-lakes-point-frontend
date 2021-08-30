@@ -39,7 +39,7 @@ class Registration extends Component {
             <div>
                 <h2>Registration</h2>
                 <form className="form-reg">
-                    <div className="input-fields-row">
+                    <div>
                         <fieldset className="input-fields-row">
                             <legend>Name</legend>
                             <p>

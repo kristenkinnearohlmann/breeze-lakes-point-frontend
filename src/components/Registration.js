@@ -72,31 +72,34 @@ class Registration extends Component {
                             </p>
                         </fieldset>
                     </div>
-                    <div className="input-fields-row">
-                        <p>
-                            <label htmlFor="street_address">Street Address</label><br/>
-                            <input type="text" name="street_address" id="street_address" value={this.state.street_address} onChange={this.handleonChange} />
-                        </p>
-                        <p>
-                            <label htmlFor="city">City</label><br/>
-                            <input type="text" name="city" id="city" value={this.state.city} onChange={this.handleonChange} />
-                        </p>
-                        <p>
-                            <label htmlFor="state_abbrev">State</label><br/>
-                            <select name="state_abbrev" id="state_abbrev" value={this.state.state_abbrev} onChange={this.handleonChange}>
-                                <option value="NA"></option>
-                                {this.state_abbrevs.map(abbrev => {
-                                    return (
-                                        <option key={abbrev} value={abbrev}>{abbrev}</option>
-                                    )
-                                })}
-                            </select>
-                        </p>
-                        <p>
-                            {/* check for number */}
-                            <label htmlFor="zip_code">Zip Code</label><br/>
-                            <input type="text" name="zip_code" id="zip_code" value={this.state.zip_code} onChange={this.handleonChange} />
-                        </p>
+                    <div>
+                        <fieldset className="input-fields-row">
+                            <legend>Address</legend>
+                            <p>
+                                <label htmlFor="street_address">Street Address</label><br/>
+                                <input type="text" name="street_address" id="street_address" value={this.state.street_address} onChange={this.handleonChange} />
+                            </p>
+                            <p>
+                                <label htmlFor="city">City</label><br/>
+                                <input type="text" name="city" id="city" value={this.state.city} onChange={this.handleonChange} />
+                            </p>
+                            <p>
+                                <label htmlFor="state_abbrev">State</label><br/>
+                                <select name="state_abbrev" id="state_abbrev" value={this.state.state_abbrev} onChange={this.handleonChange}>
+                                    <option value="NA"></option>
+                                    {this.state_abbrevs.map(abbrev => {
+                                        return (
+                                            <option key={abbrev} value={abbrev}>{abbrev}</option>
+                                        )
+                                    })}
+                                </select>
+                            </p>
+                            <p>
+                                {/* check for number */}
+                                <label htmlFor="zip_code">Zip Code</label><br/>
+                                <input type="text" name="zip_code" id="zip_code" value={this.state.zip_code} onChange={this.handleonChange} />
+                            </p>
+                        </fieldset>
                     </div>
                 </form>
             </div>

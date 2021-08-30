@@ -41,6 +41,7 @@ class Registration extends Component {
                 <form className="form-reg">
                     <div className="input-fields-row">
                         <fieldset className="input-fields-row">
+                            <legend>Name</legend>
                             <p>
                                 <label htmlFor="first_name">First Name</label><br/>
                                 <input type="text" name="first_name" id="first_name" value={this.state.first_name} onChange={this.handleonChange} />

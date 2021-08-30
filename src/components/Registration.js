@@ -56,7 +56,7 @@ class Registration extends Component {
                                 <input type="text" name="last_name" id="last_name" value={this.state.last_name} onChange={this.handleonChange} />
                             </p>
                             <p>
-                                <label htmlFor="preferred_name">Preferred Name</label><br/>
+                                <label htmlFor="preferred_name">Preferred Name</label><i class="far fa-question-circle"></i><br/>
                                 <input type="text" name="preferred_name" id="preferred_name" value={this.state.preferred_name} onChange={this.handleonChange} />
                             </p>
                             <p>

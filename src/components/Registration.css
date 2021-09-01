@@ -30,3 +30,8 @@
     font-size: 1.125rem;
     padding: .25rem;
 }
+
+.form-reg #middle_name {
+    background-color: blueviolet;
+    width: calc(75%);
+}

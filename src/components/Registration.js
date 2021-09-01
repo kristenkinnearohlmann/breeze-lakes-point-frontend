@@ -5,12 +5,13 @@ import './Registration.css'
 class Registration extends Component {
 
     state = {
-        pronoun_id: -1,
         first_name: "",
         middle_name: "",
         no_middle_name: false,
         last_name: "",
         preferred_name: "",
+        pronoun_id: -1,
+        age: "",
         street_address: "",
         apt_suite: "",
         city: "",
@@ -69,6 +70,17 @@ class Registration extends Component {
                                     <option value="2">he/him</option>
                                     <option value="3">they/them</option>
                                     <option value="4">other</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label htmlFor="age">Age</label><br/>
+                                <select name="age" id="age" value={this.state.age} onChange={this.handleonChange}>
+                                    <option value="-1"></option>
+                                    {/* TODO: Add feature to disable form for under 16 based on IP */}
+                                    <option value="0">Under 16</option>
+                                    <option value="1">16+</option>
+                                    <option value="2">18+</option>
+                                    <option value="3">21+</option>
                                 </select>
                             </p>
                         </fieldset>

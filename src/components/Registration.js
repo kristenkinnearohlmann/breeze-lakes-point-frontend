@@ -42,7 +42,7 @@ class Registration extends Component {
                 <form className="form-reg">
                     <div>
                         <fieldset className="input-fields-row">
-                            <legend>Name</legend>
+                            <legend>Personal Information</legend>
                             <p>
                                 <label htmlFor="first_name">First Name</label><br/>
                                 <input type="text" name="first_name" id="first_name" value={this.state.first_name} onChange={this.handleonChange} />
@@ -57,7 +57,7 @@ class Registration extends Component {
                                 <input type="text" name="last_name" id="last_name" value={this.state.last_name} onChange={this.handleonChange} />
                             </p>
                             <p>
-                                <label htmlFor="preferred_name">Preferred Name</label>&nbsp;<i class="far fa-question-circle" title="The name you would like to use in conversation."></i><br/>
+                                <label htmlFor="preferred_name">Preferred Name</label>&nbsp;<i className="far fa-question-circle" title="The name you would like to use in conversation."></i><br/>
                                 <input type="text" name="preferred_name" id="preferred_name" value={this.state.preferred_name} onChange={this.handleonChange} />
                             </p>
                             <p>

@@ -11,7 +11,8 @@ class Registration extends Component {
         no_middle_name: false,
         last_name: "",
         preferred_name: "",
-        street_address: "",
+        address_1: "",
+        address_2: "",
         city: "",
         state_abbrev: "",
         zip_code: ""
@@ -76,8 +77,13 @@ class Registration extends Component {
                         <fieldset className="input-fields-row">
                             <legend>Address</legend>
                             <p>
-                                <label htmlFor="street_address">Street Address</label><br/>
-                                <input type="text" name="street_address" id="street_address" value={this.state.street_address} onChange={this.handleonChange} />
+                                <label htmlFor="address_1">Address 1</label><br/>
+                                <input type="text" name="address_1" id="address_1" value={this.state.address_1} onChange={this.handleonChange} />
+                            </p>
+                            <legend>Address 2</legend>
+                            <p>
+                                <label htmlFor="address_2">Address 2</label><br/>
+                                <input type="text" name="address_2" id="address_2" value={this.state.address_2} onChange={this.handleonChange} />
                             </p>
                             <p>
                                 <label htmlFor="city">City</label><br/>

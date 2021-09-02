@@ -21,7 +21,8 @@
     margin-left: 10px;
 }
 
-.form-reg input[type="text"] {
+.form-reg input[type="text"],
+.form-reg input[type="tel"] {
     font-size: 1.125rem;
     padding: .25rem;
 }

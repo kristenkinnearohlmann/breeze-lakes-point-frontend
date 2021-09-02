@@ -14,6 +14,7 @@ class Registration extends Component {
         age: "",
         phone_1: "",
         phone_2: "",
+        email: "",
         street_address: "",
         apt_suite: "",
         city: "",
@@ -77,11 +78,11 @@ class Registration extends Component {
                                         <option value="4">other</option>
                                     </select>
                                 </p>
+                                {/* TODO: Add feature to disable form for under 16 based on IP */}
                                 <p>
                                     <label htmlFor="age">Age</label><br/>
                                     <select name="age" id="age" value={this.state.age} onChange={this.handleonChange}>
                                         <option value="-1"></option>
-                                        {/* TODO: Add feature to disable form for under 16 based on IP */}
                                         <option value="0">Under 16</option>
                                         <option value="1">16+</option>
                                         <option value="2">18+</option>
@@ -95,13 +96,20 @@ class Registration extends Component {
                         <fieldset className="input-fields-row">
                             <legend>Contact Information</legend>
                             <div>
+                                {/* TODO: Format with dots */}
                                 <p>
                                     <label htmlFor="phone_1">Best Contact Phone Number</label><br/>
                                     <input type="tel" name="phone_1" id="phone_1" value={this.state.phone_1} onChange={this.handleonChange} />
                                 </p>
+                                {/* TODO: Format with dots */}
                                 <p>
                                     <label htmlFor="phone_2">Alternate Contact Phone Number</label><br/>
                                     <input type="tel" name="phone_2" id="phone_2" value={this.state.phone_2} onChange={this.handleonChange} />
+                                </p>
+                                {/* TODO: Validate as email */}
+                                <p>
+                                    <label htmlFor="email">Email</label><br/>
+                                    <input type="email" name="email" id="email" value={this.state.email} onChange={this.handleonChange} />
                                 </p>
                             </div>
                             <div>
@@ -128,8 +136,8 @@ class Registration extends Component {
                                         })}
                                     </select>
                                 </p>
-                                <p>
-                                    {/* check for number */}
+                                {/* TODO: Check for valid */}
+                                <p className="length-175px">
                                     <label htmlFor="zip_code">Zip Code</label><br/>
                                     <input type="text" name="zip_code" id="zip_code" value={this.state.zip_code} onChange={this.handleonChange} />
                                 </p>

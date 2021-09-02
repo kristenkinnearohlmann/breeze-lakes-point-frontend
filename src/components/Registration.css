@@ -31,7 +31,8 @@ fieldset > div > p {
 }
 
 .form-reg input[type="text"],
-.form-reg input[type="tel"] {
+.form-reg input[type="tel"],
+.form-reg input[type="email"] {
     font-size: 1.125rem;
     padding: .25rem;
 }
@@ -41,11 +42,12 @@ fieldset > div > p {
     padding: .25rem;
 }
 
-.input-fields-row > p.length-175px,
 .input-fields-row > p.length-175px {
     width: 175px;
 }
 
-#middle_name, #preferred_name {
+#middle_name, 
+#preferred_name,
+#zip_code {
     width: 95%;
 }

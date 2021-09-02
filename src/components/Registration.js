@@ -48,7 +48,7 @@ class Registration extends Component {
                                 <label htmlFor="first_name">First Name</label><br/>
                                 <input type="text" name="first_name" id="first_name" value={this.state.first_name} onChange={this.handleonChange} />
                             </p>
-                            <p className="middle-name">
+                            <p className="length-175px">
                                 <label htmlFor="middle_name">Middle Name</label><br/>
                                 <input type="text" name="middle_name" id="middle_name" value={this.state.middle_name} onChange={this.handleonChange} /><br/>
                                 <input type="checkbox" name="no_middle_name" id="no_middle_name" value={this.state.no_middle_name} onChange={this.handleonChange} />No middle name
@@ -57,7 +57,7 @@ class Registration extends Component {
                                 <label htmlFor="last_name">Last Name</label><br/>
                                 <input type="text" name="last_name" id="last_name" value={this.state.last_name} onChange={this.handleonChange} />
                             </p>
-                            <p>
+                            <p className="length-175px">
                                 <label htmlFor="preferred_name">Preferred Name</label>&nbsp;<i className="far fa-question-circle" title="The name you would like to use in conversation."></i><br/>
                                 <input type="text" name="preferred_name" id="preferred_name" value={this.state.preferred_name} onChange={this.handleonChange} />
                             </p>

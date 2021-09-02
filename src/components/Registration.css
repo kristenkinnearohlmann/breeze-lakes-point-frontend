@@ -31,10 +31,11 @@
     padding: .25rem;
 }
 
-.input-fields-row > p.middle-name {
-    width: calc(35%);
+.input-fields-row > p.length-175px,
+.input-fields-row > p.length-175px {
+    width: 175px;
 }
 
-#middle_name {
+#middle_name, #preferred_name {
     width: 95%;
 }

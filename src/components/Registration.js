@@ -87,7 +87,7 @@ class Registration extends Component {
                     </div>
                     <div>
                         <fieldset className="input-fields-row">
-                            <legend>Address</legend>
+                            <legend>Contact Information</legend>
                             <p>
                                 <label htmlFor="street_address">Street Address</label><br/>
                                 <input type="text" name="street_address" id="street_address" value={this.state.street_address} onChange={this.handleonChange} />

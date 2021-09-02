@@ -46,45 +46,49 @@ class Registration extends Component {
                     <div>
                         <fieldset className="input-fields-row">
                             <legend>Personal Information</legend>
-                            <p>
-                                <label htmlFor="first_name">First Name</label><br/>
-                                <input type="text" name="first_name" id="first_name" value={this.state.first_name} onChange={this.handleonChange} />
-                            </p>
-                            <p className="length-175px">
-                                <label htmlFor="middle_name">Middle Name</label><br/>
-                                <input type="text" name="middle_name" id="middle_name" value={this.state.middle_name} onChange={this.handleonChange} /><br/>
-                                <input type="checkbox" name="no_middle_name" id="no_middle_name" value={this.state.no_middle_name} onChange={this.handleonChange} />No middle name
-                            </p>
-                            <p>
-                                <label htmlFor="last_name">Last Name</label><br/>
-                                <input type="text" name="last_name" id="last_name" value={this.state.last_name} onChange={this.handleonChange} />
-                            </p>
-                            <p className="length-175px">
-                                <label htmlFor="preferred_name">Preferred Name</label>&nbsp;<i className="far fa-question-circle" title="The name you would like to use in conversation."></i><br/>
-                                <input type="text" name="preferred_name" id="preferred_name" value={this.state.preferred_name} onChange={this.handleonChange} />
-                            </p>
-                            <p>
-                            {/* see notes for source */}
-                                <label htmlFor="pronoun_id">Pronouns</label><br/>
-                                <select name="pronoun_id" id="pronoun_id" value={this.state.pronoun_id} onChange={this.handleonChange}>
-                                    <option value="-1"></option>
-                                    <option value="1">she/her</option>
-                                    <option value="2">he/him</option>
-                                    <option value="3">they/them</option>
-                                    <option value="4">other</option>
-                                </select>
-                            </p>
-                            <p>
-                                <label htmlFor="age">Age</label><br/>
-                                <select name="age" id="age" value={this.state.age} onChange={this.handleonChange}>
-                                    <option value="-1"></option>
-                                    {/* TODO: Add feature to disable form for under 16 based on IP */}
-                                    <option value="0">Under 16</option>
-                                    <option value="1">16+</option>
-                                    <option value="2">18+</option>
-                                    <option value="3">21+</option>
-                                </select>
-                            </p>
+                            <div>
+                                <p>
+                                    <label htmlFor="first_name">First Name</label><br/>
+                                    <input type="text" name="first_name" id="first_name" value={this.state.first_name} onChange={this.handleonChange} />
+                                </p>
+                                <p className="length-175px">
+                                    <label htmlFor="middle_name">Middle Name</label><br/>
+                                    <input type="text" name="middle_name" id="middle_name" value={this.state.middle_name} onChange={this.handleonChange} /><br/>
+                                    <input type="checkbox" name="no_middle_name" id="no_middle_name" value={this.state.no_middle_name} onChange={this.handleonChange} />No middle name
+                                </p>
+                                <p>
+                                    <label htmlFor="last_name">Last Name</label><br/>
+                                    <input type="text" name="last_name" id="last_name" value={this.state.last_name} onChange={this.handleonChange} />
+                                </p>
+                            </div>
+                            <div>
+                                <p className="length-175px">
+                                    <label htmlFor="preferred_name">Preferred Name</label>&nbsp;<i className="far fa-question-circle" title="The name you would like to use in conversation."></i><br/>
+                                    <input type="text" name="preferred_name" id="preferred_name" value={this.state.preferred_name} onChange={this.handleonChange} />
+                                </p>
+                                <p>
+                                {/* see notes for source */}
+                                    <label htmlFor="pronoun_id">Pronouns</label><br/>
+                                    <select name="pronoun_id" id="pronoun_id" value={this.state.pronoun_id} onChange={this.handleonChange}>
+                                        <option value="-1"></option>
+                                        <option value="1">she/her</option>
+                                        <option value="2">he/him</option>
+                                        <option value="3">they/them</option>
+                                        <option value="4">other</option>
+                                    </select>
+                                </p>
+                                <p>
+                                    <label htmlFor="age">Age</label><br/>
+                                    <select name="age" id="age" value={this.state.age} onChange={this.handleonChange}>
+                                        <option value="-1"></option>
+                                        {/* TODO: Add feature to disable form for under 16 based on IP */}
+                                        <option value="0">Under 16</option>
+                                        <option value="1">16+</option>
+                                        <option value="2">18+</option>
+                                        <option value="3">21+</option>
+                                    </select>
+                                </p>
+                            </div>
                         </fieldset>
                     </div>
                     <div>

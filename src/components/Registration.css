@@ -11,6 +11,15 @@
     flex-flow: row wrap;
 }
 
+fieldset > div {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+fieldset > div > p {
+    margin-left: 10px;
+}
+
 .input-fields-row > legend {
     font-size: 1.15rem;
     padding-left: 10px;

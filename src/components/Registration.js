@@ -90,42 +90,46 @@ class Registration extends Component {
                     <div>
                         <fieldset className="input-fields-row">
                             <legend>Contact Information</legend>
-                            <p>
-                                <label htmlFor="phone_1">Best Contact Phone Number</label><br/>
-                                <input type="tel" name="phone_1" id="phone_1" value={this.state.phone_1} onChange={this.handleonChange} />
-                            </p>
-                            <p>
-                                <label htmlFor="phone_2">Alternate Contact Phone Number</label><br/>
-                                <input type="tel" name="phone_2" id="phone_2" value={this.state.phone_2} onChange={this.handleonChange} />
-                            </p>
-                            <p>
-                                <label htmlFor="street_address">Street Address</label><br/>
-                                <input type="text" name="street_address" id="street_address" value={this.state.street_address} onChange={this.handleonChange} />
-                            </p>
-                            <p>
-                                <label htmlFor="apt_suite">Apartment or Suite</label><br/>
-                                <input type="text" name="apt_suite" id="apt_suite" value={this.state.apt_suite} onChange={this.handleonChange} />
-                            </p>
-                            <p>
-                                <label htmlFor="city">City</label><br/>
-                                <input type="text" name="city" id="city" value={this.state.city} onChange={this.handleonChange} />
-                            </p>
-                            <p>
-                                <label htmlFor="state_abbrev">State</label><br/>
-                                <select name="state_abbrev" id="state_abbrev" value={this.state.state_abbrev} onChange={this.handleonChange}>
-                                    <option value="NA"></option>
-                                    {this.state_abbrevs.map(abbrev => {
-                                        return (
-                                            <option key={abbrev} value={abbrev}>{abbrev}</option>
-                                        )
-                                    })}
-                                </select>
-                            </p>
-                            <p>
-                                {/* check for number */}
-                                <label htmlFor="zip_code">Zip Code</label><br/>
-                                <input type="text" name="zip_code" id="zip_code" value={this.state.zip_code} onChange={this.handleonChange} />
-                            </p>
+                            <div>
+                                <p>
+                                    <label htmlFor="phone_1">Best Contact Phone Number</label><br/>
+                                    <input type="tel" name="phone_1" id="phone_1" value={this.state.phone_1} onChange={this.handleonChange} />
+                                </p>
+                                <p>
+                                    <label htmlFor="phone_2">Alternate Contact Phone Number</label><br/>
+                                    <input type="tel" name="phone_2" id="phone_2" value={this.state.phone_2} onChange={this.handleonChange} />
+                                </p>
+                            </div>
+                            <div>
+                                <p>
+                                    <label htmlFor="street_address">Street Address</label><br/>
+                                    <input type="text" name="street_address" id="street_address" value={this.state.street_address} onChange={this.handleonChange} />
+                                </p>
+                                <p>
+                                    <label htmlFor="apt_suite">Apartment or Suite</label><br/>
+                                    <input type="text" name="apt_suite" id="apt_suite" value={this.state.apt_suite} onChange={this.handleonChange} />
+                                </p>
+                                <p>
+                                    <label htmlFor="city">City</label><br/>
+                                    <input type="text" name="city" id="city" value={this.state.city} onChange={this.handleonChange} />
+                                </p>
+                                <p>
+                                    <label htmlFor="state_abbrev">State</label><br/>
+                                    <select name="state_abbrev" id="state_abbrev" value={this.state.state_abbrev} onChange={this.handleonChange}>
+                                        <option value="NA"></option>
+                                        {this.state_abbrevs.map(abbrev => {
+                                            return (
+                                                <option key={abbrev} value={abbrev}>{abbrev}</option>
+                                            )
+                                        })}
+                                    </select>
+                                </p>
+                                <p>
+                                    {/* check for number */}
+                                    <label htmlFor="zip_code">Zip Code</label><br/>
+                                    <input type="text" name="zip_code" id="zip_code" value={this.state.zip_code} onChange={this.handleonChange} />
+                                </p>
+                            </div>
                         </fieldset>
                     </div>
                 </form>

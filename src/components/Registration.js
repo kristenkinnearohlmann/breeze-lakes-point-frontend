@@ -12,6 +12,8 @@ class Registration extends Component {
         preferred_name: "",
         pronoun_id: -1,
         age: "",
+        phone_1: "",
+        phone_2: "",
         street_address: "",
         apt_suite: "",
         city: "",
@@ -88,6 +90,14 @@ class Registration extends Component {
                     <div>
                         <fieldset className="input-fields-row">
                             <legend>Contact Information</legend>
+                            <p>
+                                <label htmlFor="phone_1">Best Contact Phone Number</label><br/>
+                                <input type="tel" name="phone_1" id="phone_1" value={this.state.phone_1} onChange={this.handleonChange} />
+                            </p>
+                            <p>
+                                <label htmlFor="phone_2">Alternate Contact Phone Number</label><br/>
+                                <input type="tel" name="phone_2" id="phone_2" value={this.state.phone_2} onChange={this.handleonChange} />
+                            </p>
                             <p>
                                 <label htmlFor="street_address">Street Address</label><br/>
                                 <input type="text" name="street_address" id="street_address" value={this.state.street_address} onChange={this.handleonChange} />

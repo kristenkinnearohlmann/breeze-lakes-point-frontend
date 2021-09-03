@@ -147,6 +147,17 @@ class Registration extends Component {
                     <div>
                         <fieldset className="input-fields-row">
                             <legend>Availability</legend>
+                            <div>
+                                <p>
+                                    This year's event runs between {this.props.eventStartDate} and {this.props.eventEndDate}.
+                                </p>
+                            </div>
+                            <div>
+                                <p>
+                                    <label htmlFor="workFullEvent">Can you work all days?</label><br/>
+                                    <input type="radio"></input>
+                                </p>
+                            </div>
                         </fieldset>
                     </div>
                 </form>
@@ -158,7 +169,9 @@ class Registration extends Component {
 
 const mapStateToProps = state => {
     return {
-        currentUserId: state.current_user.id
+        currentUserId: state.current_user.id,
+        eventStartDate: "August 26, 2021",
+        eventEndDate: "September 6, 2021"
     }
 }
 

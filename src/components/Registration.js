@@ -147,7 +147,15 @@ class Registration extends Component {
                     <div>
                         <fieldset className="input-fields-row">
                             <legend>Availability</legend>
-                            <div>
+                            
+                                <p>
+                                    Stack 1
+                                </p>
+                                <p>
+                                    Stack 2
+                                </p>
+                            
+                            {/* <div>
                                 <p>
                                     This year's event runs between {this.props.eventStartDate} and {this.props.eventEndDate}.
                                 </p>
@@ -157,7 +165,7 @@ class Registration extends Component {
                                     <label htmlFor="workFullEvent">Can you work all days?</label><br/>
                                     <input type="radio"></input>
                                 </p>
-                            </div>
+                            </div> */}
                         </fieldset>
                     </div>
                 </form>

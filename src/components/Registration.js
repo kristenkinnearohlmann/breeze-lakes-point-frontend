@@ -144,6 +144,11 @@ class Registration extends Component {
                             </div>
                         </fieldset>
                     </div>
+                    <div>
+                        <fieldset className="input-fields-row">
+                            <legend>Availability</legend>
+                        </fieldset>
+                    </div>
                 </form>
             </div>
         )

@@ -5,6 +5,12 @@
     text-align: left;
 }
 
+.form-reg > div > fieldset > legend {
+    font-size: 1.15rem;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .flex-row {
     display: flex;
     flex-flow: row wrap;
@@ -13,6 +19,8 @@
 .flex-row > p {
     margin-left: 10px;
 }
+
+
 /*
 .input-fields-row {
     border: 2px solid grey;
@@ -29,11 +37,7 @@ fieldset > div > p {
     margin-left: 10px;
 }
 
-.input-fields-row > legend {
-    font-size: 1.15rem;
-    padding-left: 10px;
-    padding-right: 10px;
-}
+
 
 .input-fields-row > p {
     margin-left: 10px;

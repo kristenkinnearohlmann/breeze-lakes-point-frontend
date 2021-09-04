@@ -20,29 +20,6 @@
     margin-left: 10px;
 }
 
-
-/*
-.input-fields-row {
-    border: 2px solid grey;
-    display: flex;
-    flex-flow: row wrap;
-}
-
-fieldset > div {
-    display: flex;
-    flex-flow: row wrap;
-}
-
-fieldset > div > p {
-    margin-left: 10px;
-}
-
-
-
-.input-fields-row > p {
-    margin-left: 10px;
-}
-
 .form-reg input[type="text"],
 .form-reg input[type="tel"],
 .form-reg input[type="email"] {
@@ -63,4 +40,4 @@ p.length-175px {
 #preferred_name,
 #zip_code {
     width: 95%;
-} */
+}

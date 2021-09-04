@@ -145,25 +145,21 @@ class Registration extends Component {
                     <div>
                         <fieldset>
                             <legend>Availability</legend>
-                            
-                                <p>
-                                    Stack 1
-                                </p>
-                                <p>
-                                    Stack 2
-                                </p>
-                            
-                            {/* <div>
-                                <p>
-                                    This year's event runs between {this.props.eventStartDate} and {this.props.eventEndDate}.
-                                </p>
-                            </div>
-                            <div>
-                                <p>
-                                    <label htmlFor="workFullEvent">Can you work all days?</label><br/>
-                                    <input type="radio"></input>
-                                </p>
-                            </div> */}
+                                <div>
+                                    <p>
+                                        This year's event runs between {this.props.eventStartDate} and {this.props.eventEndDate}.
+                                    </p>
+                                </div>
+                                <div className="flex-row">
+                                    <p>
+                                        <label htmlFor="workFullEvent">Can you work all days?</label><br/>
+                                        <input type="radio"></input>
+                                    </p>
+                                    <p>
+                                        <label htmlFor="workFullEvent">Another question?</label><br/>
+                                        <input type="radio"></input>
+                                    </p>
+                                </div>
                         </fieldset>
                     </div>
                 </form>
@@ -176,6 +172,7 @@ class Registration extends Component {
 const mapStateToProps = state => {
     return {
         currentUserId: state.current_user.id,
+        // TODO: Write function to find first Monday in September and return dates
         eventStartDate: "August 26, 2021",
         eventEndDate: "September 6, 2021"
     }

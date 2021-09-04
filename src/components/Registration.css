@@ -5,10 +5,19 @@
     text-align: left;
 }
 
+.flex-row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flex-row > p {
+    margin-left: 10px;
+}
+/*
 .input-fields-row {
     border: 2px solid grey;
-    /* display: flex;
-    flex-flow: row wrap; */
+    display: flex;
+    flex-flow: row wrap;
 }
 
 fieldset > div {
@@ -50,4 +59,4 @@ p.length-175px {
 #preferred_name,
 #zip_code {
     width: 95%;
-}
+} */

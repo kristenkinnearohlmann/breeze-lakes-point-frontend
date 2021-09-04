@@ -45,9 +45,9 @@ class Registration extends Component {
                 <h2>Registration</h2>
                 <form className="form-reg">
                     <div>
-                        <fieldset className="input-fields-row">
+                        <fieldset>
                             <legend>Personal Information</legend>
-                            <div>
+                            <div className="flex-row">
                                 <p>
                                     <label htmlFor="first_name">First Name</label><br/>
                                     <input type="text" name="first_name" id="first_name" value={this.state.first_name} onChange={this.handleonChange} />
@@ -61,8 +61,6 @@ class Registration extends Component {
                                     <label htmlFor="last_name">Last Name</label><br/>
                                     <input type="text" name="last_name" id="last_name" value={this.state.last_name} onChange={this.handleonChange} />
                                 </p>
-                            </div>
-                            <div>
                                 <p className="length-175px">
                                     <label htmlFor="preferred_name">Preferred Name</label>&nbsp;<i className="far fa-question-circle" title="The name you would like to use in conversation."></i><br/>
                                     <input type="text" name="preferred_name" id="preferred_name" value={this.state.preferred_name} onChange={this.handleonChange} />
@@ -93,7 +91,7 @@ class Registration extends Component {
                         </fieldset>
                     </div>
                     <div>
-                        <fieldset className="input-fields-row">
+                        <fieldset>
                             <legend>Contact Information</legend>
                             <div>
                                 {/* TODO: Format with dots */}
@@ -145,7 +143,7 @@ class Registration extends Component {
                         </fieldset>
                     </div>
                     <div>
-                        <fieldset className="input-fields-row">
+                        <fieldset>
                             <legend>Availability</legend>
                             
                                 <p>

@@ -93,7 +93,7 @@ class Registration extends Component {
                     <div>
                         <fieldset>
                             <legend>Contact Information</legend>
-                            <div>
+                            <div className="flex-row">
                                 {/* TODO: Format with dots */}
                                 <p>
                                     <label htmlFor="phone_1">Best Contact Phone Number</label><br/>
@@ -110,7 +110,7 @@ class Registration extends Component {
                                     <input type="email" name="email" id="email" value={this.state.email} onChange={this.handleonChange} />
                                 </p>
                             </div>
-                            <div>
+                            <div className="flex-row">
                                 <p>
                                     <label htmlFor="street_address">Street Address</label><br/>
                                     <input type="text" name="street_address" id="street_address" value={this.state.street_address} onChange={this.handleonChange} />

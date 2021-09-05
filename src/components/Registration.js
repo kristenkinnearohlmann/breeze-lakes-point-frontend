@@ -44,7 +44,7 @@ class Registration extends Component {
         return (
             <div>
                 <h2>Registration</h2>
-                <form className="form-reg">
+                <form className="form-reg" onSubmit={this.handleSubmit}>
                     <div>
                         <fieldset>
                             <legend>Personal Information</legend>
@@ -166,6 +166,9 @@ class Registration extends Component {
                                     </p>
                                 </div>
                         </fieldset>
+                    </div>
+                    <div>
+                        <input type="submit" />
                     </div>
                 </form>
             </div>

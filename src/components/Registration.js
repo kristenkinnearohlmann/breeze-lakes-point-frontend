@@ -19,7 +19,8 @@ class Registration extends Component {
         apt_suite: "",
         city: "",
         state_abbrev: "",
-        zip_code: ""
+        zip_code: "",
+        work_all: ""
     }
 
     state_abbrevs = [ 'AL', 'AK', 'AS', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'DC', 'FM', 'FL', 'GA', 'GU', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MH', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'MP', 'OH', 'OK', 'OR', 'PW', 'PA', 'PR', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VI', 'VA', 'WA', 'WV', 'WI', 'WY' ]
@@ -153,14 +154,15 @@ class Registration extends Component {
                                 <div className="flex-row">
                                     <p>
                                         Can you work all days?<br/>
-                                        <p>
-                                            <label>
-                                                Yes
-                                            </label><br/>
-                                            <label>
-                                                No
-                                            </label>
-                                        </p>
+                                        <label>
+                                            <input type="radio" value="1"
+                                            checked={this.state.work_all === "1"} onChange={this.handleonChange} />
+                                            Yes
+                                        </label><br/>
+                                        <label>
+                                            <input type="radio" value="0" checked={this.state.work_all === "0"} onChange={this.handleonChange} />
+                                            No
+                                        </label>
                                     </p>
                                 </div>
                         </fieldset>

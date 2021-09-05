@@ -152,12 +152,15 @@ class Registration extends Component {
                                 </div>
                                 <div className="flex-row">
                                     <p>
-                                        <label htmlFor="workFullEvent">Can you work all days?</label><br/>
-                                        <input type="radio"></input>
-                                    </p>
-                                    <p>
-                                        <label htmlFor="workFullEvent">Another question?</label><br/>
-                                        <input type="radio"></input>
+                                        Can you work all days?<br/>
+                                        <p>
+                                            <label>
+                                                Yes
+                                            </label><br/>
+                                            <label>
+                                                No
+                                            </label>
+                                        </p>
                                     </p>
                                 </div>
                         </fieldset>

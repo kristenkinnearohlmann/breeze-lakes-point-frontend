@@ -155,12 +155,12 @@ class Registration extends Component {
                                     <p>
                                         Can you work all days?<br/>
                                         <label>
-                                            <input type="radio" value="1"
+                                            <input type="radio" name="work_all" value="1"
                                             checked={this.state.work_all === "1"} onChange={this.handleonChange} />
                                             Yes
                                         </label><br/>
                                         <label>
-                                            <input type="radio" value="0" checked={this.state.work_all === "0"} onChange={this.handleonChange} />
+                                            <input type="radio" name="work_all" value="0" checked={this.state.work_all === "0"} onChange={this.handleonChange} />
                                             No
                                         </label>
                                     </p>

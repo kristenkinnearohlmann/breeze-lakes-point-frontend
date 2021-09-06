@@ -165,7 +165,12 @@ class Registration extends Component {
                                         </label>
                                     </p>
                                     <p>
-                                        Preferred Shifts
+                                        {/* TODO: Add checkboxes */}
+                                        Preferred Shifts<br/>
+                                        Morning (6 am - 2 pm)<br/>
+                                        Day (10 am - 6 pm)<br/>
+                                        Evening (2 pm - 10 pm)<br/>
+                                        Overnight (10 pm - 6 am)
                                     </p>
                                     <p>
                                         Can you work pre-event (May-Sep)?

@@ -20,7 +20,9 @@ class Registration extends Component {
         city: "",
         state_abbrev: "",
         zip_code: "",
-        work_all: ""
+        work_all: "",
+        pre_event: "",
+        post_event: ""
     }
 
     state_abbrevs = [ 'AL', 'AK', 'AS', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'DC', 'FM', 'FL', 'GA', 'GU', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MH', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'MP', 'OH', 'OK', 'OR', 'PW', 'PA', 'PR', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VI', 'VA', 'WA', 'WV', 'WI', 'WY' ]
@@ -155,8 +157,7 @@ class Registration extends Component {
                                     <p>
                                         Can you work all days of the event?<br/>
                                         <label>
-                                            <input type="radio" name="work_all" value="1"
-                                            checked={this.state.work_all === "1"} onChange={this.handleonChange} />
+                                            <input type="radio" name="work_all" value="1" checked={this.state.work_all === "1"} onChange={this.handleonChange} />
                                             Yes
                                         </label><br/>
                                         <label>
@@ -173,7 +174,15 @@ class Registration extends Component {
                                         Overnight (10 pm - 6 am)
                                     </p>
                                     <p>
-                                        Can you work pre-event (May-Sep)?
+                                        Can you work pre-event (May-Sep)?<br/>
+                                        <label>
+                                            <input type="radio" name="pre_event" value="1" checked={this.state.pre_event === "1"} onChange={this.handleonChange} />
+                                            Yes
+                                        </label><br/>
+                                        <label>
+                                            <input type="radio" name="pre_event" value="0" checked={this.state.pre_event === "0"} onChange={this.handleonChange} />
+                                            No
+                                        </label>
                                     </p>
                                     <p>
                                         Can you work post-event (Sep-Nov)?

@@ -153,7 +153,7 @@ class Registration extends Component {
                                 </div>
                                 <div className="flex-row">
                                     <p>
-                                        Can you work all days?<br/>
+                                        Can you work all days of the event?<br/>
                                         <label>
                                             <input type="radio" name="work_all" value="1"
                                             checked={this.state.work_all === "1"} onChange={this.handleonChange} />
@@ -163,6 +163,15 @@ class Registration extends Component {
                                             <input type="radio" name="work_all" value="0" checked={this.state.work_all === "0"} onChange={this.handleonChange} />
                                             No
                                         </label>
+                                    </p>
+                                    <p>
+                                        Preferred Shifts
+                                    </p>
+                                    <p>
+                                        Can you work pre-event (May-Sep)?
+                                    </p>
+                                    <p>
+                                        Can you work post-event (Sep-Nov)?
                                     </p>
                                 </div>
                         </fieldset>

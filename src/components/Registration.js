@@ -185,7 +185,15 @@ class Registration extends Component {
                                         </label>
                                     </p>
                                     <p>
-                                        Can you work post-event (Sep-Nov)?
+                                        Can you work post-event (Sep-Nov)?<br/>
+                                        <label>
+                                            <input type="radio" name="post_event" value="1" checked={this.state.post_event === "1"} onChange={this.handleonChange} />
+                                            Yes
+                                        </label><br/>
+                                        <label>
+                                            <input type="radio" name="post_event" value="0" checked={this.state.post_event === "0"} onChange={this.handleonChange} />
+                                            No
+                                        </label>
                                     </p>
                                 </div>
                         </fieldset>

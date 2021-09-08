@@ -21,12 +21,10 @@ class Registration extends Component {
         state_abbrev: "",
         zip_code: "",
         work_all: "",
-        work_hours: {
-           morning: false,
-           day: false,
-           evening: false,
-           overnight: false 
-        },
+        work_hours_morning: false,
+        work_hours_day: false,
+        work_hours_evening: false,
+        work_hours_overnight: false,
         pre_event: "",
         post_event: ""
     }
@@ -179,7 +177,7 @@ class Registration extends Component {
                                         Evening (2 pm - 10 pm)<br/>
                                         Overnight (10 pm - 6 am)<br/>
                                         <label>
-                                            <input type="checkbox" name="overnight" id="overnight" checked={this.state.work_hours.overnight} onChange={this.handleonChange} />
+                                            <input type="checkbox" name="overnight" id="overnight" checked={this.state.work_hours_overnight} onChange={this.handleonChange} />
                                             Overnight
                                         </label>
                                     </p>

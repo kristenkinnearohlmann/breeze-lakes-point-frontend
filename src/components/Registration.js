@@ -172,13 +172,21 @@ class Registration extends Component {
                                     <p>
                                         {/* TODO: Add checkboxes */}
                                         Preferred Shifts<br/>
-                                        Morning (6 am - 2 pm)<br/>
-                                        Day (10 am - 6 pm)<br/>
-                                        Evening (2 pm - 10 pm)<br/>
-                                        Overnight (10 pm - 6 am)<br/>
                                         <label>
-                                            <input type="checkbox" name="overnight" id="overnight" checked={this.state.work_hours_overnight} onChange={this.handleonChange} />
-                                            Overnight
+                                            <input type="checkbox" name="work_hours_morning" checked={this.state.work_hours_morning} onChange={this.handleonChange} />
+                                            Morning (6 am - 2 pm)
+                                        </label><br/>
+                                        <label>
+                                            <input type="checkbox" name="work_hours_day" checked={this.state.work_hours_day} onChange={this.handleonChange} />
+                                            Day (10 am - 6 pm)
+                                        </label><br/>
+                                        <label>
+                                            <input type="checkbox" name="work_hours_evening" checked={this.state.work_hours_evening} onChange={this.handleonChange} />
+                                            Evening (2 pm - 10 pm)
+                                        </label><br/>
+                                        <label>
+                                            <input type="checkbox" name="work_hours_overnight" checked={this.state.work_hours_overnight} onChange={this.handleonChange} />
+                                            Overnight (10 pm - 6 am)
                                         </label>
                                     </p>
                                     <p>

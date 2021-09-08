@@ -177,7 +177,11 @@ class Registration extends Component {
                                         Morning (6 am - 2 pm)<br/>
                                         Day (10 am - 6 pm)<br/>
                                         Evening (2 pm - 10 pm)<br/>
-                                        Overnight (10 pm - 6 am)
+                                        Overnight (10 pm - 6 am)<br/>
+                                        <label>
+                                            <input type="checkbox" name="overnight" id="overnight" checked={this.state.work_hours.overnight} onChange={this.handleonChange} />
+                                            Overnight
+                                        </label>
                                     </p>
                                     <p>
                                         Can you work pre-event (May-Sep)?<br/>

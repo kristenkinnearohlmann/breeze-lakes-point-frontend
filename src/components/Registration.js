@@ -21,6 +21,12 @@ class Registration extends Component {
         state_abbrev: "",
         zip_code: "",
         work_all: "",
+        work_hours: {
+           morning: false,
+           day: false,
+           evening: false,
+           overnight: false 
+        },
         pre_event: "",
         post_event: ""
     }

@@ -170,7 +170,8 @@ class Registration extends Component {
                                         </label>
                                     </p>
                                     <p>
-                                        {/* TODO: Add checkboxes */}
+                                        {/* TODO: Fix toggle */}
+                                        {/* TODO: Fix values */}
                                         Preferred Shifts<br/>
                                         <label>
                                             <input type="checkbox" name="work_hours_morning" checked={this.state.work_hours_morning} onChange={this.handleonChange} />

@@ -21,12 +21,11 @@ class Registration extends Component {
         state_abbrev: "",
         zip_code: "",
         work_all: "",
-        work_hours_morning: false,
-        work_hours_day: false,
-        work_hours_evening: false,
-        work_hours_overnight: false,
-        quick: {
-            start: false
+        hours: {
+            morning: false,
+            day: false,
+            evening: false,
+            overnight: false
         },
         pre_event: "",
         post_event: ""
@@ -45,7 +44,7 @@ class Registration extends Component {
         const { name, checked } = event.target
 
         this.setState((prevState) => {
-            const hours = prevState.quick
+            const hours = prevState.hours
             hours[name] = checked
             return hours
         })
@@ -184,29 +183,22 @@ class Registration extends Component {
                                         </label>
                                     </p>
                                     <p>
-                                        {/* TODO: Fix toggle */}
-                                        {/* TODO: Fix values */}
                                         Preferred Shifts<br/>
                                         <label>
-                                            <input type="checkbox" name="work_hours_morning" checked={this.state.work_hours_morning} onChange={this.handleonChange} />
+                                            <input type="checkbox" name="morning" checked={this.state.hours.morning} onChange={this.handleHours} />
                                             Morning (6 am - 2 pm)
                                         </label><br/>
                                         <label>
-                                            <input type="checkbox" name="work_hours_day" checked={this.state.work_hours_day} onChange={this.handleonChange} />
+                                            <input type="checkbox" name="day" checked={this.state.hours.day} onChange={this.handleHours} />
                                             Day (10 am - 6 pm)
                                         </label><br/>
                                         <label>
-                                            <input type="checkbox" name="work_hours_evening" checked={this.state.work_hours_evening} onChange={this.handleonChange} />
+                                            <input type="checkbox" name="evening" checked={this.state.hours.evening} onChange={this.handleHours} />
                                             Evening (2 pm - 10 pm)
                                         </label><br/>
                                         <label>
-                                            <input type="checkbox" name="work_hours_overnight" checked={this.state.work_hours_overnight} onChange={this.handleonChange} />
+                                            <input type="checkbox" name="overnight" checked={this.state.hours.overnight} onChange={this.handleHours} />
                                             Overnight (10 pm - 6 am)
-                                        </label>
-                                        {/* TODO: Better construct this version based on https://codepen.io/she-writescode/pen/zYrgqXg */}
-                                        <label>
-                                            <input type="checkbox" name="start" checked={this.state.quick.start} onChange={this.handleHours} />
-                                            Quick start
                                         </label>
                                     </p>
                                     <p>

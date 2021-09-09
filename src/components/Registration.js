@@ -41,6 +41,16 @@ class Registration extends Component {
         })
     }
 
+    handleHours = event => {
+        const { name, checked } = event.target
+
+        this.setState((prevState) => {
+            const hours = prevState.quick
+            hours[name] = checked
+            return hours
+        })
+    }
+
     handleSubmit = event => {
         event.preventDefault()
         console.log(this.state)
@@ -195,7 +205,7 @@ class Registration extends Component {
                                         </label>
                                         {/* TODO: Better construct this version based on https://codepen.io/she-writescode/pen/zYrgqXg */}
                                         <label>
-                                            <input type="checkbox" name="quick[start]" checked={this.state.quick.start} onChange={this.handleonChange} />
+                                            <input type="checkbox" name="start" checked={this.state.quick.start} onChange={this.handleHours} />
                                             Quick start
                                         </label>
                                     </p>

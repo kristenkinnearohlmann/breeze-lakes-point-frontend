@@ -13,6 +13,7 @@ A proof of concept application for registration and management of applicants. Th
 
 - <https://medium.com/@siobhanpmahoney/deploying-a-react-frontend-rails-backend-project-to-heroku-4b2c4f6f630c>
 - <https://aws.amazon.com/getting-started/hands-on/build-react-app-amplify-graphql/>
+- React multiple checkboxes <https://codepen.io/she-writescode/pen/zYrgqXg?editors=0010>
 - Colors
    - purple #4D1D82
    - green #00BFB2

@@ -25,6 +25,9 @@ class Registration extends Component {
         work_hours_day: false,
         work_hours_evening: false,
         work_hours_overnight: false,
+        quick: {
+            start: false
+        },
         pre_event: "",
         post_event: ""
     }
@@ -32,6 +35,7 @@ class Registration extends Component {
     state_abbrevs = [ 'AL', 'AK', 'AS', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'DC', 'FM', 'FL', 'GA', 'GU', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MH', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'MP', 'OH', 'OK', 'OR', 'PW', 'PA', 'PR', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VI', 'VA', 'WA', 'WV', 'WI', 'WY' ]
 
     handleonChange = event => {
+        console.log(event.target.name)
         this.setState({
             [event.target.name]: event.target.value
         })
@@ -188,6 +192,11 @@ class Registration extends Component {
                                         <label>
                                             <input type="checkbox" name="work_hours_overnight" checked={this.state.work_hours_overnight} onChange={this.handleonChange} />
                                             Overnight (10 pm - 6 am)
+                                        </label>
+                                        {/* TODO: Better construct this version based on https://codepen.io/she-writescode/pen/zYrgqXg */}
+                                        <label>
+                                            <input type="checkbox" name="quick[start]" checked={this.state.quick.start} onChange={this.handleonChange} />
+                                            Quick start
                                         </label>
                                     </p>
                                     <p>

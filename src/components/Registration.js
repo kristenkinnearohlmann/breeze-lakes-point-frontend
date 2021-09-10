@@ -226,7 +226,7 @@ class Registration extends Component {
                                 </div>
                         </fieldset>
                     </div>
-                    <div>
+                    <div id="submit">
                         <input type="submit" />
                     </div>
                 </form>

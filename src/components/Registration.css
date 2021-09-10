@@ -11,6 +11,10 @@
     padding-right: 10px;
 }
 
+#submit {
+    margin-top: 20px;
+}
+
 .flex-row {
     display: flex;
     flex-flow: row wrap;

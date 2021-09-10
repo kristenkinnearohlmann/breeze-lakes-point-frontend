@@ -28,7 +28,8 @@ class Registration extends Component {
             overnight: false
         },
         pre_event: "",
-        post_event: ""
+        post_event: "",
+        reg_ack: false
     }
 
     state_abbrevs = [ 'AL', 'AK', 'AS', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'DC', 'FM', 'FL', 'GA', 'GU', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MH', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'MP', 'OH', 'OK', 'OR', 'PW', 'PA', 'PR', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VI', 'VA', 'WA', 'WV', 'WI', 'WY' ]
@@ -224,6 +225,24 @@ class Registration extends Component {
                                         </label>
                                     </p>
                                 </div>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Notice to Registrants</legend>
+                            <p>
+                                This registration is not an application for, an offer of, or a contract for employment with the event and creates no contractual or employment relationship between the event and the person completing this registration.
+                            </p>
+                            <p>
+                                If you are referred to interview and are subsequently offered a position with the event, you will be required to complete the event's Application For Employment.
+                            </p>
+                            <p>
+                                I certify that all statements made on this registration are true and complete to the best of my knowledge. I understand that any misrepresentation of any kind may result in denial of employment or subsequent dismissal if I am hired.
+                            </p>
+                            <label>
+                                <input type="checkbox" name="reg-ack" checked={this.state.reg_ack} onChange={this.handleonChange} />
+                                I acknowledge that I have read the above information and that the answers I provided are true and accurate. This will serve as your signature.
+                            </label>
                         </fieldset>
                     </div>
                     <div id="submit-reg">

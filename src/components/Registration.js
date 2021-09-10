@@ -240,7 +240,7 @@ class Registration extends Component {
                                 I certify that all statements made on this registration are true and complete to the best of my knowledge. I understand that any misrepresentation of any kind may result in denial of employment or subsequent dismissal if I am hired.
                             </p>
                             <label>
-                                <input type="checkbox" name="reg-ack" checked={this.state.reg_ack} onChange={this.handleonChange} />
+                                <input type="checkbox" name="reg_ack" checked={this.state.reg_ack} onChange={this.handleonChange} />
                                 I acknowledge that I have read the above information and that the answers I provided are true and accurate. This will serve as your signature.
                             </label>
                         </fieldset>

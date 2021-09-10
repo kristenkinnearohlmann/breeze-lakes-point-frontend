@@ -11,8 +11,12 @@
     padding-right: 10px;
 }
 
-#submit {
+#submit-reg {
     margin-top: 20px;
+}
+
+#submit-reg > input[type="submit"] {
+
 }
 
 .flex-row {

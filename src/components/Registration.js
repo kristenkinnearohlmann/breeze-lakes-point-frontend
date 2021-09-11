@@ -70,8 +70,8 @@ class Registration extends Component {
                             <legend>Personal Information</legend>
                             <div className="flex-row">
                                 <p>
-                                    <label htmlFor="first_name">First Name</label><br/>
-                                    <input type="text" name="first_name" id="first_name" value={this.state.first_name} onChange={this.handleonChange} />
+                                    <label htmlFor="first_name">First Name</label><span className="required-field">*</span><br/>
+                                    <input type="text" name="first_name" id="first_name" value={this.state.first_name} onChange={this.handleonChange} required />
                                 </p>
                                 <p className="length-175px">
                                     <label htmlFor="middle_name">Middle Name</label><br/>

@@ -79,8 +79,8 @@ class Registration extends Component {
                                     <input type="checkbox" name="no_middle_name" id="no_middle_name" value={this.state.no_middle_name} onChange={this.handleonChange} />No middle name
                                 </p>
                                 <p>
-                                    <label htmlFor="last_name">Last Name</label><br/>
-                                    <input type="text" name="last_name" id="last_name" value={this.state.last_name} onChange={this.handleonChange} />
+                                    <label htmlFor="last_name">Last Name</label><span className="required-field">*</span><br/>
+                                    <input type="text" name="last_name" id="last_name" value={this.state.last_name} onChange={this.handleonChange} required />
                                 </p>
                                 <p className="length-175px">
                                     <label htmlFor="preferred_name">Preferred Name</label>&nbsp;<i className="far fa-question-circle" title="The name you would like to use in conversation."></i><br/>
@@ -88,8 +88,8 @@ class Registration extends Component {
                                 </p>
                                 <p>
                                 {/* see notes for source */}
-                                    <label htmlFor="pronoun_id">Pronouns</label><br/>
-                                    <select name="pronoun_id" id="pronoun_id" value={this.state.pronoun_id} onChange={this.handleonChange}>
+                                    <label htmlFor="pronoun_id">Pronouns<span className="required-field">*</span></label><br/>
+                                    <select name="pronoun_id" id="pronoun_id" value={this.state.pronoun_id} onChange={this.handleonChange} required>
                                         <option value="-1"></option>
                                         <option value="1">she/her</option>
                                         <option value="2">he/him</option>
@@ -99,8 +99,8 @@ class Registration extends Component {
                                 </p>
                                 {/* TODO: Add feature to disable form for under 16 based on IP */}
                                 <p>
-                                    <label htmlFor="age">Age</label><br/>
-                                    <select name="age" id="age" value={this.state.age} onChange={this.handleonChange}>
+                                    <label htmlFor="age">Age</label><span className="required-field">*</span><br/>
+                                    <select name="age" id="age" value={this.state.age} onChange={this.handleonChange} required>
                                         <option value="-1"></option>
                                         <option value="0">Under 16</option>
                                         <option value="1">16+</option>
@@ -117,8 +117,8 @@ class Registration extends Component {
                             <div className="flex-row">
                                 {/* TODO: Format with dots */}
                                 <p>
-                                    <label htmlFor="phone_1">Best Contact Phone Number</label><br/>
-                                    <input type="tel" name="phone_1" id="phone_1" value={this.state.phone_1} onChange={this.handleonChange} />
+                                    <label htmlFor="phone_1">Best Contact Phone Number</label><span className="required-field">*</span><br/>
+                                    <input type="tel" name="phone_1" id="phone_1" value={this.state.phone_1} onChange={this.handleonChange} required />
                                 </p>
                                 {/* TODO: Format with dots */}
                                 <p>
@@ -133,20 +133,20 @@ class Registration extends Component {
                             </div>
                             <div className="flex-row">
                                 <p>
-                                    <label htmlFor="street_address">Street Address</label><br/>
-                                    <input type="text" name="street_address" id="street_address" value={this.state.street_address} onChange={this.handleonChange} />
+                                    <label htmlFor="street_address">Street Address</label><span className="required-field">*</span><br/>
+                                    <input type="text" name="street_address" id="street_address" value={this.state.street_address} onChange={this.handleonChange} required />
                                 </p>
                                 <p>
                                     <label htmlFor="apt_suite">Apartment or Suite</label><br/>
                                     <input type="text" name="apt_suite" id="apt_suite" value={this.state.apt_suite} onChange={this.handleonChange} />
                                 </p>
                                 <p>
-                                    <label htmlFor="city">City</label><br/>
-                                    <input type="text" name="city" id="city" value={this.state.city} onChange={this.handleonChange} />
+                                    <label htmlFor="city">City</label><span className="required-field">*</span><br/>
+                                    <input type="text" name="city" id="city" value={this.state.city} onChange={this.handleonChange} required />
                                 </p>
                                 <p>
-                                    <label htmlFor="state_abbrev">State</label><br/>
-                                    <select name="state_abbrev" id="state_abbrev" value={this.state.state_abbrev} onChange={this.handleonChange}>
+                                    <label htmlFor="state_abbrev">State<span className="required-field">*</span></label><br/>
+                                    <select name="state_abbrev" id="state_abbrev" value={this.state.state_abbrev} onChange={this.handleonChange} required>
                                         <option value="NA"></option>
                                         {this.state_abbrevs.map(abbrev => {
                                             return (
@@ -157,8 +157,8 @@ class Registration extends Component {
                                 </p>
                                 {/* TODO: Check for valid */}
                                 <p className="length-175px">
-                                    <label htmlFor="zip_code">Zip Code</label><br/>
-                                    <input type="text" name="zip_code" id="zip_code" value={this.state.zip_code} onChange={this.handleonChange} />
+                                    <label htmlFor="zip_code">Zip Code<span className="required-field">*</span></label><br/>
+                                    <input type="text" name="zip_code" id="zip_code" value={this.state.zip_code} onChange={this.handleonChange} required />
                                 </p>
                             </div>
                         </fieldset>
@@ -173,9 +173,9 @@ class Registration extends Component {
                                 </div>
                                 <div className="flex-row">
                                     <p>
-                                        Can you work all days of the event?<br/>
+                                        Can you work all days of the event?<span className="required-field">*</span><br/>
                                         <label>
-                                            <input type="radio" name="work_all" value="1" checked={this.state.work_all === "1"} onChange={this.handleonChange} />
+                                            <input type="radio" name="work_all" value="1" checked={this.state.work_all === "1"} onChange={this.handleonChange} required />
                                             Yes
                                         </label><br/>
                                         <label>
@@ -184,9 +184,9 @@ class Registration extends Component {
                                         </label>
                                     </p>
                                     <p>
-                                        Preferred Shifts<br/>
+                                        Preferred Shifts<span className="required-field">*</span><br/>
                                         <label>
-                                            <input type="checkbox" name="morning" checked={this.state.hours.morning} onChange={this.handleHours} />
+                                            <input type="checkbox" name="morning" checked={this.state.hours.morning} onChange={this.handleHours} required />
                                             Morning (6 am - 2 pm)
                                         </label><br/>
                                         <label>
@@ -240,8 +240,8 @@ class Registration extends Component {
                                 I certify that all statements made on this registration are true and complete to the best of my knowledge. I understand that any misrepresentation of any kind may result in denial of employment or subsequent dismissal if I am hired.
                             </p>
                             <label>
-                                <input type="checkbox" name="reg_ack" checked={this.state.reg_ack} onChange={this.handleonChange} />
-                                I acknowledge that I have read the above information and that the answers I provided are true and accurate. This will serve as your signature.
+                                <input type="checkbox" name="reg_ack" checked={this.state.reg_ack} onChange={this.handleonChange} required />
+                                I acknowledge that I have read the above information and that the answers I provided are true and accurate. This will serve as your signature.<span className="required-field">*</span>
                             </label>
                         </fieldset>
                     </div>

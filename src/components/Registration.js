@@ -184,9 +184,9 @@ class Registration extends Component {
                                         </label>
                                     </p>
                                     <p>
-                                        Preferred Shifts<span className="required-field">*</span><br/>
+                                        Preferred Shifts<br/>
                                         <label>
-                                            <input type="checkbox" name="morning" checked={this.state.hours.morning} onChange={this.handleHours} required />
+                                            <input type="checkbox" name="morning" checked={this.state.hours.morning} onChange={this.handleHours} />
                                             Morning (6 am - 2 pm)
                                         </label><br/>
                                         <label>

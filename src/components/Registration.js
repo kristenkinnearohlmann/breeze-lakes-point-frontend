@@ -51,6 +51,10 @@ class Registration extends Component {
         })
     }
 
+    blurName  = event => {
+        console.log('Left First Name field')
+    }
+
     handleSubmit = event => {
         event.preventDefault()
         console.log(this.state)
@@ -71,7 +75,7 @@ class Registration extends Component {
                             <div className="flex-row">
                                 <p>
                                     <label htmlFor="first_name">First Name</label><span className="required-field">*</span><br/>
-                                    <input type="text" name="first_name" id="first_name" value={this.state.first_name} onChange={this.handleonChange} required />
+                                    <input type="text" name="first_name" id="first_name" value={this.state.first_name} onChange={this.handleonChange} onBlur={this.blurName} required />
                                 </p>
                                 <p className="length-175px">
                                     <label htmlFor="middle_name">Middle Name</label><br/>

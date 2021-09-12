@@ -53,10 +53,7 @@ class Registration extends Component {
 
     handlePhoneNumber = event => {
         const { name, value } = event.target
-
-        console.log(`The value of value is: ${value}`)
         const formattedNumber = this.formatPhoneNumber(value)
-        console.log(`This is post function: ${formattedNumber}`)
 
         this.setState({
             [name]: formattedNumber
@@ -64,7 +61,6 @@ class Registration extends Component {
     }
 
     formatPhoneNumber = value => {
-        console.log(`The value in format function is: ${value}`)
         if (!value) return value
 
         const phoneNumber = value.replace(/[^\d]/g, "")
@@ -154,7 +150,7 @@ class Registration extends Component {
                                 {/* TODO: Format with dots */}
                                 <p>
                                     <label htmlFor="phone_2">Alternate Contact Phone Number</label><br/>
-                                    <input type="tel" name="phone_2" id="phone_2" value={this.state.phone_2} onChange={this.handleonChange} />
+                                    <input type="tel" name="phone_2" id="phone_2" value={this.state.phone_2} onChange={this.handlePhoneNumber} />
                                 </p>
                                 {/* TODO: Validate as email */}
                                 <p>

@@ -51,6 +51,33 @@ class Registration extends Component {
         })
     }
 
+    handlePhoneNumber = event => {
+        const { name, value } = event.target
+
+        console.log(`The value of value is: ${value}`)
+        const formattedNumber = this.formatPhoneNumber(value)
+        console.log(`This is post function: ${formattedNumber}`)
+
+        this.setState({
+            [name]: formattedNumber
+        })
+    }
+
+    formatPhoneNumber = value => {
+        console.log(`The value in format function is: ${value}`)
+        if (!value) return value
+
+        const phoneNumber = value.replace(/[^\d]/g, "")
+
+        if (phoneNumber.length < 4) return phoneNumber
+
+        if (phoneNumber.length < 7) {
+            return `${phoneNumber.slice(0,3)}.${phoneNumber.slice(3)}`
+        }
+
+        return `${phoneNumber.slice(0,3)}.${phoneNumber.slice(3,6)}.${phoneNumber.slice(6,10)}`
+    }
+
     blurName  = event => {
         console.log('Left First Name field')
     }
@@ -122,7 +149,7 @@ class Registration extends Component {
                                 {/* TODO: Format with dots */}
                                 <p>
                                     <label htmlFor="phone_1">Best Contact Phone Number</label><span className="required-field">*</span><br/>
-                                    <input type="tel" name="phone_1" id="phone_1" value={this.state.phone_1} onChange={this.handleonChange} required />
+                                    <input type="tel" name="phone_1" id="phone_1" value={this.state.phone_1} onChange={this.handlePhoneNumber} required />
                                 </p>
                                 {/* TODO: Format with dots */}
                                 <p>

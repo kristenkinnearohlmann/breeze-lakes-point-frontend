@@ -65,3 +65,7 @@ p.length-175px {
 #zip_code {
     width: 95%;
 }
+
+.error-field {
+    border: 2px solid blueviolet;
+}

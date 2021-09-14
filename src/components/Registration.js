@@ -96,7 +96,7 @@ class Registration extends Component {
                         <fieldset>
                             <legend>Personal Information</legend>
                             <div className="flex-row">
-                                <p>
+                                <p className="error-field">
                                     <label htmlFor="first_name">First Name</label><span className="required-field">*</span><br/>
                                     <input type="text" name="first_name" id="first_name" value={this.state.first_name} onChange={this.handleonChange} onBlur={this.blurName} required />
                                 </p>
@@ -142,7 +142,6 @@ class Registration extends Component {
                         <fieldset>
                             <legend>Contact Information</legend>
                             <div className="flex-row">
-                                {/* TODO: Format with dots */}
                                 <p>
                                     <label htmlFor="phone_1">Best Contact Phone Number</label><span className="required-field">*</span><br/>
                                     <input type="tel" name="phone_1" id="phone_1" value={this.state.phone_1} onChange={this.handlePhoneNumber} required />

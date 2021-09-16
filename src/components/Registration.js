@@ -115,8 +115,8 @@ class Registration extends Component {
                                 </p>
                                 <p>
                                 {/* see notes for source */}
-                                    <label htmlFor="pronoun_id">Pronouns<span className="required-field">*</span></label><br/>
-                                    <select name="pronoun_id" id="pronoun_id" value={this.state.pronoun_id} onChange={this.handleonChange} required>
+                                    <label htmlFor="pronoun_id">Pronouns</label><br/>
+                                    <select name="pronoun_id" id="pronoun_id" value={this.state.pronoun_id} onChange={this.handleonChange}>
                                         <option value="-1"></option>
                                         <option value="1">she/her</option>
                                         <option value="2">he/him</option>
@@ -126,8 +126,8 @@ class Registration extends Component {
                                 </p>
                                 {/* TODO: Add feature to disable form for under 16 based on IP */}
                                 <p>
-                                    <label htmlFor="age">Age</label><span className="required-field">*</span><br/>
-                                    <select name="age" id="age" value={this.state.age} onChange={this.handleonChange} required>
+                                    <label htmlFor="age">Age</label><br/>
+                                    <select name="age" id="age" value={this.state.age} onChange={this.handleonChange} >
                                         <option value="-1"></option>
                                         <option value="0">Under 16</option>
                                         <option value="1">16+</option>
@@ -171,8 +171,8 @@ class Registration extends Component {
                                     <input type="text" name="city" id="city" value={this.state.city} onChange={this.handleonChange} required />
                                 </p>
                                 <p>
-                                    <label htmlFor="state_abbrev">State<span className="required-field">*</span></label><br/>
-                                    <select name="state_abbrev" id="state_abbrev" value={this.state.state_abbrev} onChange={this.handleonChange} required>
+                                    <label htmlFor="state_abbrev">State</label><br/>
+                                    <select name="state_abbrev" id="state_abbrev" value={this.state.state_abbrev} onChange={this.handleonChange} >
                                         <option value="NA"></option>
                                         {this.state_abbrevs.map(abbrev => {
                                             return (

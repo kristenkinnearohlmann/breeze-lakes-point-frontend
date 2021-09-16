@@ -96,7 +96,7 @@ class Registration extends Component {
                         <fieldset>
                             <legend>Personal Information</legend>
                             <div className="flex-row">
-                                <p className="error-field">
+                                <p>
                                     <label htmlFor="first_name">First Name</label><span className="required-field">*</span><br/>
                                     <input type="text" name="first_name" id="first_name" value={this.state.first_name} onChange={this.handleonChange} onBlur={this.blurName} required />
                                 </p>

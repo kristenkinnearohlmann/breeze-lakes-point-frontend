@@ -1,5 +1,6 @@
 import { React, Component } from 'react'
 import { connect } from 'react-redux'
+import Info from './Info'
 import './Registration.css'
 
 class Registration extends Component {
@@ -114,7 +115,7 @@ class Registration extends Component {
                                     <input type="text" name="last_name" id="last_name" value={this.state.last_name} onChange={this.handleonChange} required />
                                 </p>
                                 <p className="length-175px">
-                                    <label htmlFor="preferred_name">Preferred Name</label>&nbsp;<i id="info-preferredname" className="far fa-question-circle" title="The name you would like to use in conversation." onClick={this.showInfo}></i><br/>
+                                    <label htmlFor="preferred_name">Preferred Name</label>&nbsp;<i id="info-preferredname" className="far fa-question-circle" title="The name you would like to use in conversation." onClick={this.showInfo}><Info /><br/>
                                     <input type="text" name="preferred_name" id="preferred_name" value={this.state.preferred_name} onChange={this.handleonChange} />
                                 </p>
                                 <p>

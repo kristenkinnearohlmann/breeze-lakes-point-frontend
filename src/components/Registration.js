@@ -35,6 +35,15 @@ class Registration extends Component {
     state_abbrevs = [ 'AL', 'AK', 'AS', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'DC', 'FM', 'FL', 'GA', 'GU', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MH', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'MP', 'OH', 'OK', 'OR', 'PW', 'PA', 'PR', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VI', 'VA', 'WA', 'WV', 'WI', 'WY' ]
 
     handleonChange = event => {
+        if (event.target.name == 'middle_name' && event.target.value) {
+            console.log('Middle name value')
+            document.getElementById('no_middle_name').disabled = true
+
+        } else {
+            console.log('Nope on middle name')
+            document.getElementById('no_middle_name').disabled = false
+        }
+
         this.setState({
             [event.target.name]: event.target.value
         })
@@ -76,15 +85,15 @@ class Registration extends Component {
     handleBlur = event => {
         console.log('In handleBlur method')
         console.log(event.target.name)
-        switch(event.target.name) {
-            case 'middle_name':
-                console.log(this.state.middle_name)
-                console.log(!!this.state.middle_name)
-                if (!!this.state.middle_name) document.getElementById('no_middle_name').disabled = true
-                break
-            default:
-                console.log('No handler defined')
-        }
+        // switch(event.target.name) {
+        //     case 'middle_name':
+        //         console.log(this.state.middle_name)
+        //         console.log(!!this.state.middle_name)
+        //         if (!!this.state.middle_name) document.getElementById('no_middle_name').disabled = true
+        //         break
+        //     default:
+        //         console.log('No handler defined')
+        // }
     }
 
     showInfo = () => {

@@ -19,7 +19,10 @@ body {
   margin-top: 1rem;
 }
 
-
 a {
+  color: #61dafb;
+}
+
+.app-button {
   color: #61dafb;
 }

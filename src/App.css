@@ -25,4 +25,6 @@ a {
 
 .app-button {
   color: #61dafb;
+  font-size: 1.5rem;
+  padding: 1rem;
 }

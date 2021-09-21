@@ -12,7 +12,9 @@ const Main = () => {
               <span className="title brand-name">Breeze Lakes Point</span><br/>
               <span className="title">serious fun!</span><br/>
               {/* TODO: Remove Dashboard button once both Log In and Sign Up are in production */}
-              <Link to="/home"><button className="app-button-main">Dashboard</button></Link><button className="app-button-main" id="splash-login">Log In</button><Link to="/registration"><button className="app-button-main" id="splash-signup">Sign Up</button></Link>
+              <Link to="/home"><button className="app-button-main">Dashboard</button></Link>
+              <Link to="/login"><button className="app-button-main" id="splash-login">Log In</button></Link>
+              <Link to="/registration"><button className="app-button-main" id="splash-signup">Sign Up</button></Link>
             </div>
           </div>
       </div>

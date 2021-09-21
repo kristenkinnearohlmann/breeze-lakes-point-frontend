@@ -11,8 +11,8 @@ const Main = () => {
             <div>
               <span className="title brand-name">Breeze Lakes Point</span><br/>
               <span className="title">serious fun!</span><br/>
-              <button id="splash-login">Log In</button><button id="splash-signup">Sign Up</button>
-              <Link to="/home">Dashboard</Link>
+              {/* TODO: Remove Dashboard button once both Log In and Sign Up are in production */}
+              <Link to="/home"><button className="splash-button">Dashboard</button></Link><button className="splash-button" id="splash-login">Log In</button><Link to="/registration"><button className="splash-button" id="splash-signup">Sign Up</button></Link>
             </div>
           </div>
       </div>

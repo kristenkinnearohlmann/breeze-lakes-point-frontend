@@ -29,6 +29,14 @@ class Registration extends Component {
         },
         pre_event: "",
         post_event: "",
+        event_jobs: {
+            animals: false,
+            building_maintenance: false,
+            cleaning: false,
+            customer_service: false,
+            office_work: false,
+            supervisor: false
+        },
         reg_ack: false
     }
 
@@ -54,6 +62,16 @@ class Registration extends Component {
             const hours = prevState.hours
             hours[name] = checked
             return hours
+        })
+    }
+
+    handleEventJobs = event => {
+        const { name, checked } = event.target
+
+        this.setState((prevState) => {
+            const jobs = prevState.event_jobs
+            jobs[name] = checked
+            return jobs
         })
     }
 
@@ -254,6 +272,19 @@ class Registration extends Component {
                                         </label>
                                     </p>
                                 </div>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Job Type Preferences</legend>
+                            <div className="flex-row">
+                                <p>
+                                    Event Jobs<br/>
+                                    <label>
+                                        <input type="checkbox" name="animals" checked={this.state.event_jobs.animals} onChange={this.handleEventJobs} /> Animals
+                                    </label><br/>
+                                </p>
+                            </div>
                         </fieldset>
                     </div>
                     <div>

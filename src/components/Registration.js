@@ -299,14 +299,44 @@ class Registration extends Component {
                                 <p>
                                     Event Jobs<br/>
                                     <label>
-                                        <input type="checkbox" name="animals" checked={this.state.event_jobs.animals} onChange={this.handleEventJobs} /> Animals
+                                        <input type="checkbox" name="animals" checked={this.state.event_jobs.animals} onChange={this.handleEventJobs} />Animals
                                     </label><br/>
+                                    <label>
+                                        <input type="checkbox" name="building_maintenance" checked={this.state.event_jobs.building_maintenance} onChange={this.handleEventJobs} />Building Maintenance
+                                    </label><br/>
+                                    <label>
+                                        <input type="checkbox" name="cleaning" checked={this.state.event_jobs.cleaning} onChange={this.handleEventJobs} />Cleaning
+                                    </label><br/>
+                                    <label>
+                                        <input type="checkbox" name="customer_service" checked={this.state.event_jobs.customer_service} onChange={this.handleEventJobs} />Customer Service
+                                    </label><br/>
+                                    <label>
+                                        <input type="checkbox" name="office_work" checked={this.state.event_jobs.office_work} onChange={this.handleEventJobs} />Office Work
+                                    </label><br/>
+                                    <label>
+                                        <input type="checkbox" name="supervisor" checked={this.state.event_jobs.supervisor} onChange={this.handleEventJobs} />Supervisor
+                                    </label>
                                 </p>
                                 <p>
                                     Vendor Jobs<br/>
                                     <label>
-                                        <input type="checkbox" name="cooking" checked={this.state.event_jobs.cooking} onChange={this.handleVendorJobs} /> Cooking
+                                        <input type="checkbox" name="cooking" checked={this.state.event_jobs.cooking} onChange={this.handleVendorJobs} />Cooking
                                     </label><br/>
+                                    <label>
+                                        <input type="checkbox" name="food_preparation" checked={this.state.event_jobs.food_preparation} onChange={this.handleVendorJobs} />Food Preparation
+                                    </label><br/>
+                                    <label>
+                                        <input type="checkbox" name="food_sales" checked={this.state.event_jobs.food_sales} onChange={this.handleVendorJobs} />Food Sales
+                                    </label><br/>
+                                    <label>
+                                        <input type="checkbox" name="stand_maintenance" checked={this.state.event_jobs.stand_maintenance} onChange={this.handleVendorJobs} />Stand Maintenance
+                                    </label><br/>
+                                    <label>
+                                        <input type="checkbox" name="retail_sales" checked={this.state.event_jobs.retail_sales} onChange={this.handleVendorJobs} />Retail Sales
+                                    </label><br/>
+                                    <label>
+                                        <input type="checkbox" name="games_rides" checked={this.state.event_jobs.games_rides} onChange={this.handleVendorJobs} />Games and Rides
+                                    </label>
                                 </p>
                             </div>
                         </fieldset>

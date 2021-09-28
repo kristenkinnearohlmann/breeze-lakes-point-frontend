@@ -37,6 +37,14 @@ class Registration extends Component {
             office_work: false,
             supervisor: false
         },
+        vendor_jobs: {
+            cooking: false,
+            food_preparation: false,
+            food_sales: false,
+            stand_maintenance: false,
+            retail_sales: false,
+            games_rides: false
+        },
         reg_ack: false
     }
 
@@ -70,6 +78,16 @@ class Registration extends Component {
 
         this.setState((prevState) => {
             const jobs = prevState.event_jobs
+            jobs[name] = checked
+            return jobs
+        })
+    }
+
+    handleVendorJobs = event => {
+        const { name, checked } = event.target
+        
+        this.setState((prevState) => {
+            const jobs = prevState.vendor_jobs
             jobs[name] = checked
             return jobs
         })
@@ -282,6 +300,12 @@ class Registration extends Component {
                                     Event Jobs<br/>
                                     <label>
                                         <input type="checkbox" name="animals" checked={this.state.event_jobs.animals} onChange={this.handleEventJobs} /> Animals
+                                    </label><br/>
+                                </p>
+                                <p>
+                                    Vendor Jobs<br/>
+                                    <label>
+                                        <input type="checkbox" name="cooking" checked={this.state.event_jobs.cooking} onChange={this.handleVendorJobs} /> Cooking
                                     </label><br/>
                                 </p>
                             </div>

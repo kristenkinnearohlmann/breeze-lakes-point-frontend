@@ -5,6 +5,8 @@ import './Registration.css'
 class Registration extends Component {
 
     state = {
+        login: "",
+        pwd: "",
         first_name: "",
         middle_name: "",
         no_middle_name: false,

@@ -141,6 +141,10 @@ class Registration extends Component {
                                     <label htmlFor="login">Login name or email</label><span className="required-field">*</span><br/>
                                     <input type="text" name="login" id="login" value={this.state.login} onChange={this.handleonChange} required />
                                 </p>
+                                <p>
+                                    <label htmlFor="pwd">Password</label><span className="required-field">*</span><br/>
+                                    <input type="password" name="pwd" id="pwd" value={this.state.pwd} onChange={this.handleonChange} required />
+                                </p>
                             </div>
                         </fieldset>
                     </div>

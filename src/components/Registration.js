@@ -135,6 +135,17 @@ class Registration extends Component {
                 <form className="form-reg" onSubmit={this.handleSubmit}>
                     <div>
                         <fieldset>
+                            <legend>Login Information</legend>
+                            <div className="flex-row">
+                                <p>
+                                    <label htmlFor="login">Login name or email</label><span className="required-field">*</span><br/>
+                                    <input type="text" name="login" id="login" value={this.state.login} onChange={this.handleonChange} required />
+                                </p>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset>
                             <legend>Personal Information</legend>
                             <div className="flex-row">
                                 <p>

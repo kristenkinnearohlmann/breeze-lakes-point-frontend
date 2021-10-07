@@ -131,8 +131,15 @@ class Registration extends Component {
     render() {
         return (
             <div>
-                <h2>Registration</h2>
+                <h2>Applicant Registration</h2>
                 <form className="form-reg" onSubmit={this.handleSubmit}>
+                    <div>
+                        <p>
+                        Working for our event is a one-of-a-kind experience! Please complete or update this registration details prior to visiting our office.</p>
+                        <p>
+                        We will meet with you to review this information and determine if there are open interviews that match with your unique personal contribution.
+                        </p>
+                    </div>
                     <div>
                         <fieldset>
                             <legend>Login Information</legend>

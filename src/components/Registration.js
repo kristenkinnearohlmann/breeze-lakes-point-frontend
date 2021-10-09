@@ -47,6 +47,21 @@ class Registration extends Component {
             retail_sales: false,
             games_rides: false
         },
+        prev_exp: false,
+        prev_event_exp: false,
+        prev_vendor_exp: false,
+        skills: {
+            cleaning_custodial: false,
+            data_entry: false,
+            cooking: false,
+            customer_service: false,
+            heavy_equipment: false,
+            food_beverage_service: false,
+            physical_labor: false,
+            money_cashier: false,
+            retail_sales: false,
+            security: false
+        },
         reg_ack: false
     }
 
@@ -95,6 +110,16 @@ class Registration extends Component {
         })
     }
 
+    handleSkills = event => {
+        const { name, checked } = event.target
+
+        this.setState((prevState) => {
+            const skills = prevState.skills
+            skills[name] = checked
+            return skills
+        })
+    }
+
     handlePhoneNumber = event => {
         const { name, value } = event.target
         const formattedNumber = this.formatPhoneNumber(value)
@@ -135,9 +160,9 @@ class Registration extends Component {
                 <form className="form-reg" onSubmit={this.handleSubmit}>
                     <div>
                         <p>
-                        Working for our event is a one-of-a-kind experience! Please complete or update this registration details prior to visiting our office.</p>
+                        Working for our event is a one-of-a-kind experience! Please complete or update these registration details prior to visiting our office.</p>
                         <p>
-                        We will meet with you to review this information and determine if there are open interviews that match with your unique personal contribution.
+                        We will meet with you to review this information and look for open interviews that match your unique personal contribution.
                         </p>
                     </div>
                     <div>
@@ -318,7 +343,7 @@ class Registration extends Component {
                     </div>
                     <div>
                         <fieldset>
-                            <legend>Job Type Preferences</legend>
+                            <legend>Work Type Preferences</legend>
                             <div className="flex-row">
                                 <p>
                                     Event Jobs<br/>
@@ -360,6 +385,63 @@ class Registration extends Component {
                                     </label><br/>
                                     <label>
                                         <input type="checkbox" name="games_rides" checked={this.state.event_jobs.games_rides} onChange={this.handleVendorJobs} />Games and Rides
+                                    </label>
+                                </p>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>
+                                Work Experience
+                            </legend>
+                            <div className="flex-row">
+                                <p>
+                                    History<br/>
+                                    <label>
+                                        <input type="checkbox" name="prev_exp" checked={this.state.prev_exp} onChange={this.handleonChange} />
+                                        I have previous work experience.
+                                    </label><br/>
+                                    <label>
+                                        <input type="checkbox" name="prev_event_exp" checked={this.state.prev_event_exp} onChange={this.handleonChange} />
+                                        I have worked for the event.
+                                    </label><br/>
+                                    <label>
+                                        <input type="checkbox" name="prev_vendor_exp" checked={this.state.prev_vendor_exp} onChange={this.handleonChange} />
+                                        I have worked for a vendor.
+                                    </label>
+                                </p>
+                                <p>
+                                    Skills<br/>
+                                    <label>
+                                        <input type="checkbox" name="cleaning_custodial" checked={this.state.skills.cleaning_custodial} onChange={this.handleSkills} />Cleaning or Custodial Work
+                                    </label><br/>
+                                    <label>
+                                        <input type="checkbox" name="data_entry" checked={this.state.skills.data_entry} onChange={this.handleSkills} />Data Entry
+                                    </label><br/>
+                                    <label>
+                                        <input type="checkbox" name="cooking" checked={this.state.skills.cooking} onChange={this.handleSkills} />Cooking
+                                    </label><br/>
+                                    <label>
+                                        <input type="checkbox" name="customer_service" checked={this.state.skills.customer_service} onChange={this.handleSkills} />Customer Service
+                                    </label><br/>
+                                    <label>
+                                        <input type="checkbox" name="heavy_equipment" checked={this.state.skills.heavy_equipment} onChange={this.handleSkills} />Heavy equipment operation
+                                    </label><br/>
+                                    <label>
+                                        <input type="checkbox" name="food_beverage_service" checked={this.state.skills.food_beverage_service} onChange={this.handleSkills} />Food or Beverage Service
+                                    </label><br/>
+                                    <label>
+                                        <input type="checkbox" name="physical_labor" checked={this.state.skills.physical_labor} onChange={this.handleSkills} />Physical Labor
+                                    </label><br/>
+                                    <label>
+                                        <input type="checkbox" name="money_cashier" checked={this.state.skills.money_cashier} onChange={this.handleSkills} />Money Handling or Cashier
+                                    </label><br/>
+                                    <label>
+                                        <input type="checkbox" name="retail_sales" checked={this.state.skills.retail_sales} onChange={this.handleSkills} />Retail Sales
+                                    </label><br/>
+                                    <label>
+                                        <input type="checkbox" name="security" checked={this.state.skills.security} onChange={this.handleSkills} />Security
                                     </label>
                                 </p>
                             </div>

@@ -75,14 +75,12 @@ class Registration extends Component {
             document.getElementById('no_middle_name').disabled = false
         }
 
-        console.log(this.state)
+        this.setState({
+            [event.target.name]: event.target.value
+        },() => {
+            console.log(this.state)
+        })
 
-        if (![{...this.state.hours}].includes(event.target.name)) {
-            this.setState({
-                [event.target.name]: event.target.value
-            })
-        }
-        
     }
 
     handleHours = event => {
@@ -92,6 +90,8 @@ class Registration extends Component {
             const hours = prevState.hours
             hours[name] = checked
             return hours
+        },() => {
+            console.log(this.state)
         })
     }
 
